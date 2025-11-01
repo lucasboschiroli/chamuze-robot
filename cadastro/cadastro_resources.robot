@@ -34,7 +34,6 @@ ${BOTAO_LOGIN}    name:btn_login
 ${TEXTO_SUCESSO_LOGIN}    Serviços Disponíveis
 ${TEXTO_SUCESSO_SOLICITANTE}    Seu serviço doméstico a um clique de distância.
 ${TEXTO_FALHA}    E-mail ou senha incorretos!
-${URL_CADASTRO_ADM}    http://localhost/chamuze/PROJETO/administrador/cadastroAdm.php
 ${MENSAGEM_SUCESSO_CADASTRO_ADM}    Usuário cadastrado com sucesso
 ${MENSAGEM_EMAIL_DUPLICADO}    E-mail de usuário já cadastrado no banco de dados
 ${ALERTA_SUCESSO}    css=.alert.alert-success
@@ -162,6 +161,23 @@ Realizar cadastro de administradores com email inválido (já cadastrado)
     Input Text    ${SENHA_CONFIRMA}    TrueDetectiveS01!
     Log    Envio de formulário verificado com sucesso - saiu da página de formulário
 
+Verificar login bem-sucedido de solicitante
+    [Documentation]    Verifica se o login de solicitante foi realizado com sucesso através da mensagem característica
+    [Tags]    validation    solicitante    positive-test
+    Wait Until Page Contains    ${TEXTO_SUCESSO_SOLICITANTE}    timeout=20s
+    ${url}=    Get Location
+    Should Not Contain    ${url}    login.php
+    Log    Login de solicitante realizado com sucesso - redirecionamento confirmado
+
+Verificar mensagem de erro de login
+    [Documentation]    Verifica se a mensagem de erro para credenciais inválidas é exibida corretamente
+    [Tags]    validation    error-handling    negative-test
+    Element Should Be Visible    ${ALERTA_ERRO}
+    Wait Until Page Contains    ${TEXTO_FALHA}    timeout=10s
+    ${url}=    Get Location
+    Should Contain    ${url}    login.php
+    Log    Mensagem de erro de login exibida corretamente - usuário permanece na página de login
+
 Verificar a mensagem de erro de senha
     Element Should Contain    ${SENHA_ERRADA}    A senha não atende aos requisitos
 
@@ -173,17 +189,21 @@ Realizar login válido como administrador
     Click Element    ${BOTAO_LOGIN}
     Log    Administrador logado com sucesso
 
-Realizar login válido como prestador
-    Input Text    ${CAMPO_EMAIL}    prestador@teste.com
+Realizar login válido como solicitante
+    [Documentation]    Realiza login no sistema com credenciais válidas de solicitante
+    [Tags]    login    solicitante    authentication    positive-test
+    Input Text    ${CAMPO_EMAIL}    solicitante@teste.com
     Input Text    ${CAMPO_SENHA}    123
     Click Element    ${BOTAO_LOGIN}
-    Wait Until Page Contains    ${TEXTO_SUCESSO_LOGIN}    timeout=20s
+    Log    Tentativa de login de solicitante realizada
 
-Realizar login inválido como prestador
-    Input Text    ${CAMPO_EMAIL}    prestador@teste.com
+Realizar login inválido como solicitante
+    [Documentation]    Tenta realizar login com senha incorreta
+    [Tags]    login    solicitante    authentication    negative-test
+    Input Text    ${CAMPO_EMAIL}    solicitante@teste.com
     Input Text    ${CAMPO_SENHA}    7777
     Click Element    ${BOTAO_LOGIN}
-    Wait Until Page Contains   ${TEXTO_FALHA}    timeout=10s
+    Log    Tentativa de login com senha inválida realizada
 
 Fechar o navegador
     [Documentation]    Fecha o navegador

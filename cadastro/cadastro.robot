@@ -82,21 +82,32 @@ CT9 - Cadastro de administradores com o campo de email inválido (email já cada
     Verificar mensagem de erro de email duplicado
     Capture Page Screenshot    evidencia_ct9_06_apos_mensagem_de_erro.png
 
-## Casos de teste extras?????
+CT13 - Realização de login de um usuário com todos os campos válidos
+    [Documentation]    Realiza login de um solicitante com credenciais válidas e verifica acesso bem-sucedido ao sistema
+    [Tags]    login    solicitante    authentication    positive-test
 
-CT - login válido como prestador 
-    [Documentation]
-    [Tags]
-    Acessar página de login
-    Realizar login válido como prestador
+    Abrir navegador
 
-CT - login válido como solicitante 
-    [Documentation]
-    [Tags]
     Acessar página de login
+    Capture Page Screenshot    evidencia_ct13_01_pagina_login.png
     
-CT - login dando erro
-    [Documentation]
-    [tags]
+    Realizar login válido como solicitante
+    Capture Page Screenshot    evidencia_ct13_02_apos_clicar_login.png
+    
+    Verificar login bem-sucedido de solicitante
+    Capture Page Screenshot    evidencia_ct13_03_apos_login_bem_sucedido.png
+    
+CT14 - Realização de login com senha inválida/incorreta
+    [Documentation]    Tenta realizar login com senha incorreta e verifica que mensagem de erro é exibida
+    [Tags]    login    solicitante    authentication    negative-test    error-handling
+
+    Abrir navegador
+    
     Acessar página de login
-    Realizar login inválido como prestador
+    Capture Page Screenshot    evidencia_ct14_01_pagina_login.png
+    
+    Realizar login inválido como solicitante
+    Capture Page Screenshot    evidencia_ct14_02_apos_clicar_login.png
+    
+    Verificar mensagem de erro de login
+    Capture Page Screenshot    evidencia_ct14_03_apos_mensagem_de_erro.png
