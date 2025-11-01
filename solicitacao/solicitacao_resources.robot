@@ -22,8 +22,6 @@ ${PEDIR}    name:btn_solicitar
 ${CONFIRMA_SOLICITACAO}    Serviços Disponíveis
 ${ERRO_SOLICITACAO}    
 
-
-
 *** Keywords ***
 Abrir navegador
     open Browser    ${URL}    ${Browser}

@@ -13,7 +13,6 @@ ${BOTAO_EXCLUIR_SERVICO}    xpath=//button[contains(., 'Excluir')]
 ${BOTAO_CONFIRMA_EXCLUIR}    xpath=//button[contains(text(), 'Sim, excluir!')]
 ${BOTAO_CANCELAR_EXCLUIR}    xpath=//button[contains(text(), 'Cancelar')]
 
-
 *** Keywords ***
 Abrir navegador
     open Browser    ${URL}    ${Browser}
