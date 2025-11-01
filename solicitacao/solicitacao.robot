@@ -1,21 +1,23 @@
 *** Settings ***
 Resource    solicitacao_resources.robot
-Test Setup    Abrir navegador
+Test Setup    Configurar ambiente de teste
 Test Teardown    Fechar o navegador
 
 *** Test Cases ***
-CT1 - Solicitação de serviços com todos os campos válidos
+CT17 - Solicitação de serviços com todos os campos válidos
     [Documentation]
     [Tags]
+    Abrir navegador
     Realizar login valido solicitante
     acessar pagina de solicitacao 
     Preencher formulario de solictacao
     Enviar solicitacao 
     Verificar se foi feita a solicitacao
 
-CT2 - Solicitação de serviço com o campo preço vazio
+CT18 - Solicitação de serviço com o campo preço vazio
     [Documentation]
     [Tags]
+    Abrir navegador
     Realizar login valido solicitante
     Acessar pagina de solicitacao
     Preencher formulario solictacao sem preco

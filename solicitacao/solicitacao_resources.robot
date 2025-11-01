@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    OperatingSystem
 
 *** Variables ***
 ${Browser}    Chrome
@@ -23,16 +24,23 @@ ${CONFIRMA_SOLICITACAO}    Serviços Disponíveis
 ${ERRO_SOLICITACAO}    
 
 *** Keywords ***
+Configurar ambiente de teste
+    Create Directory    ${CURDIR}/Evidencias
+    Set Screenshot Directory    ${CURDIR}/Evidencias
+    
 Abrir navegador
     open Browser    ${URL}    ${Browser}
     Maximize browser window
+
 Realizar login valido solicitante 
     Input Text    ${CAMPO_EMAIL}    solicitante@teste.com
     Input Text    ${CAMPO_SENHA}    123
     Click Element    ${BOTAO_LOGIN}
+
 Acessar pagina de solicitacao 
     Wait Until Page Contains    ${TEXTO_SUCESSO_SOLICITANTE}    timeout=40s
     Click Element    ${BOTAO_SOLICITAR}
+
 Preencher formulario de solictacao
     Input Text    ${TITULO_SOLICITAO}    jardinagem
     Input Text    ${DESCRICAO_SERVICO}    quero alguem para realizar a minha jardinagem do meu quintal
@@ -40,10 +48,13 @@ Preencher formulario de solictacao
     Select From List By Label    ${CAMPO_CATEGORIA_SERVICO}    ${CATEGORIA}
     Select From List By Label    ${CAMPO_CATEGORIA_REGIAO}    ${REGIAO}
     Input Text    ${PRECO}    120
+
 Enviar solicitacao 
     Click Element    ${PEDIR}
+
 Verificar se foi feita a solicitacao
     Wait Until Page Contains    ${CONFIRMA_SOLICITACAO}    timeout=40s
+
 Preencher formulario solictacao sem preco
     Input Text    ${TITULO_SOLICITAO}    jardinagem
     Input Text    ${DESCRICAO_SERVICO}    quero alguem para realizar a minha jardinagem do meu quintal
@@ -52,10 +63,12 @@ Preencher formulario solictacao sem preco
     Select From List By Label    ${CAMPO_CATEGORIA_REGIAO}    ${REGIAO}
     Input Text    ${PRECO}    ${EMPTY}
     Click Element    ${PEDIR}
+
 Verificar mensagem de erro    
     ${msg}=    Execute Javascript    return document.getElementsByName("preco")[0].validationMessage
     Log To Console    Mensagem exibida: ${msg}
     Should Be Equal As Strings    ${msg}    Preencha este campo.
+    
 Fechar o navegador
     Capture PageScreenshot
     Close Browser
