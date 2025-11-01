@@ -3,9 +3,8 @@ Resource    solicitacao_resources.robot
 Test Setup    Abrir navegador
 Test Teardown    Fechar o navegador
 
-
 *** Test Cases ***
-CT1- teset solciitacao
+CT1 - Solicitação de serviços com todos os campos válidos
     [Documentation]
     [Tags]
     Realizar login valido solicitante
@@ -13,7 +12,8 @@ CT1- teset solciitacao
     Preencher formulario de solictacao
     Enviar solicitacao 
     Verificar se foi feita a solicitacao
-CT2- teste sem preco
+
+CT2 - Solicitação de serviço com o campo preço vazio
     [Documentation]
     [Tags]
     Realizar login valido solicitante
