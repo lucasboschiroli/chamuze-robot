@@ -41,22 +41,22 @@ CT8 - Cadastro de administradores com todos os campos válidos
     Abrir navegador
 
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct8_01_apos_acesso_a_pagina_de_login.png
+    Capture Page Screenshot    ct08_01_apos_acesso_a_pagina_de_login.png
 
     Realizar login válido como administrador
-    Capture Page Screenshot    evidencia_ct8_02_apos_login.png
+    Capture Page Screenshot    ct08_02_apos_login.png
 
     Acessar página de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct8_03_apos_acesso_a_pagina_de_cadastro.png
+    Capture Page Screenshot    ct08_03_apos_acesso_a_pagina_de_cadastro.png
 
     Preencher formulário de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct8_04_apos_preenchimento_de_formulario.png
+    Capture Page Screenshot    ct08_04_apos_preenchimento_de_formulario.png
 
     Enviar solicitação de cadastro
-    Capture Page Screenshot    evidencia_ct8_05_apos_envio_de_formulario.png
+    Capture Page Screenshot    ct08_05_apos_envio_de_formulario.png
 
     Verificar se o cadastro de administradores foi realizado com sucesso  
-    Capture Page Screenshot    evidencia_ct8_06_apos_mensagem_de_sucesso.png
+    Capture Page Screenshot    ct08_06_apos_mensagem_de_sucesso.png
 
 CT9 - Cadastro de administradores com o campo de email inválido (email já cadastrado)
     [Documentation]  Cadastrando um novo administrador no sistema utilizando um email já cadastrado
@@ -65,22 +65,22 @@ CT9 - Cadastro de administradores com o campo de email inválido (email já cada
     Abrir navegador
 
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct9_01_apos_acesso_a_pagina_de_login.png
+    Capture Page Screenshot    ct09_01_apos_acesso_a_pagina_de_login.png
 
     Realizar login válido como administrador
-    Capture Page Screenshot    evidencia_ct9_02_apos_login.png
+    Capture Page Screenshot    ct09_02_apos_login.png
 
     Acessar página de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct9_03_apos_acesso_a_pagina_de_cadastro.png
+    Capture Page Screenshot    ct09_03_apos_acesso_a_pagina_de_cadastro.png
 
     Realizar cadastro de administradores com email inválido (já cadastrado)
-    Capture Page Screenshot    evidencia_ct9_04_apos_preenchimento_de_formulario.png
+    Capture Page Screenshot    ct09_04_apos_preenchimento_de_formulario.png
 
     Enviar solicitação de cadastro
-    Capture Page Screenshot    evidencia_ct9_05_apos_envio_de_formulario.png
+    Capture Page Screenshot    ct09_05_apos_envio_de_formulario.png
 
     Verificar mensagem de erro de email duplicado
-    Capture Page Screenshot    evidencia_ct9_06_apos_mensagem_de_erro.png
+    Capture Page Screenshot    ct09_06_apos_mensagem_de_erro.png
 
 CT13 - Realização de login de um usuário com todos os campos válidos
     [Documentation]    Realiza login de um solicitante com credenciais válidas e verifica acesso bem-sucedido ao sistema
@@ -89,13 +89,13 @@ CT13 - Realização de login de um usuário com todos os campos válidos
     Abrir navegador
 
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct13_01_pagina_login.png
+    Capture Page Screenshot    ct13_01_pagina_login.png
     
     Realizar login válido como solicitante
-    Capture Page Screenshot    evidencia_ct13_02_apos_clicar_login.png
+    Capture Page Screenshot    ct13_02_apos_clicar_login.png
     
     Verificar login bem-sucedido de solicitante
-    Capture Page Screenshot    evidencia_ct13_03_apos_login_bem_sucedido.png
+    Capture Page Screenshot    ct13_03_apos_login_bem_sucedido.png
     
 CT14 - Realização de login com senha inválida/incorreta
     [Documentation]    Tenta realizar login com senha incorreta e verifica que mensagem de erro é exibida
@@ -104,10 +104,10 @@ CT14 - Realização de login com senha inválida/incorreta
     Abrir navegador
     
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct14_01_pagina_login.png
+    Capture Page Screenshot    ct14_01_pagina_login.png
     
     Realizar login inválido como solicitante
-    Capture Page Screenshot    evidencia_ct14_02_apos_clicar_login.png
+    Capture Page Screenshot    ct14_02_apos_clicar_login.png
     
     Verificar mensagem de erro de login
-    Capture Page Screenshot    evidencia_ct14_03_apos_mensagem_de_erro.png
+    Capture Page Screenshot    ct14_03_apos_mensagem_de_erro.png

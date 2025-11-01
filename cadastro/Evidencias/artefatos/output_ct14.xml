@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-01T19:18:33.437562" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro" source="c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\cadastro.robot">
+<test id="s1-t1" name="CT14 - Realização de login com senha inválida/incorreta" line="100">
+<kw name="Configurar ambiente de teste" owner="cadastro_resources" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-11-01T19:18:33.860004" level="INFO" html="true">Directory '&lt;a href="file://c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\Evidencias"&gt;c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\Evidencias&lt;/a&gt;' already exists.</msg>
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\cadastro/Evidencias</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-11-01T19:18:33.859261" elapsed="0.004587"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\cadastro/Evidencias</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-11-01T19:18:33.864461" elapsed="0.000894"/>
+</kw>
+<status status="PASS" start="2025-11-01T19:18:33.854190" elapsed="0.011565"/>
+</kw>
+<kw name="Abrir navegador" owner="cadastro_resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:33.868313" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/chamuze/PROJETO/cadastro.php?tipo_perfil=prestador'.</msg>
+<arg>${URL_CADASTRO}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T19:18:33.867619" elapsed="1.868023"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.736275" elapsed="0.056715"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:18:35.797063" level="INFO">Navegador aberto com sucesso</msg>
+<arg>Navegador aberto com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.794773" elapsed="0.002865"/>
+</kw>
+<tag>browser</tag>
+<tag>setup</tag>
+<doc>Abre o navegador Chrome e maximiza a janela na página de cadastro de prestadores</doc>
+<status status="PASS" start="2025-11-01T19:18:33.866843" elapsed="1.931324"/>
+</kw>
+<kw name="Acessar página de login" owner="cadastro_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:35.803119" level="INFO">Opening url 'http://localhost/chamuze/PROJETO/login.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.802301" elapsed="0.065735"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.868448" elapsed="0.022607"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:18:35.892591" level="INFO">Acesso a página de login com sucesso</msg>
+<arg>Acesso a página de login com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.891823" elapsed="0.005247"/>
+</kw>
+<tag>login</tag>
+<tag>navigation</tag>
+<doc>Navega para a página de login e aguarda o carregamento do campo de email</doc>
+<status status="PASS" start="2025-11-01T19:18:35.801336" elapsed="0.098446"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:36.162717" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_01_pagina_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_01_pagina_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct14_01_pagina_login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:18:35.919905" elapsed="0.244449"/>
+</kw>
+<kw name="Realizar login inválido como solicitante" owner="cadastro_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:36.168158" level="INFO">Typing text 'solicitante@teste.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL}</arg>
+<arg>solicitante@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.167067" elapsed="0.212451"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:36.380702" level="INFO">Typing text '7777' into text field 'name:senha'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>7777</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.380127" elapsed="0.132787"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:36.514483" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.513445" elapsed="0.300129"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:18:36.814523" level="INFO">Tentativa de login com senha inválida realizada</msg>
+<arg>Tentativa de login com senha inválida realizada</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.814099" elapsed="0.000769"/>
+</kw>
+<tag>authentication</tag>
+<tag>login</tag>
+<tag>negative-test</tag>
+<tag>solicitante</tag>
+<doc>Tenta realizar login com senha incorreta</doc>
+<status status="PASS" start="2025-11-01T19:18:36.166048" elapsed="0.649129"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:36.993180" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_02_apos_clicar_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_02_apos_clicar_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct14_02_apos_clicar_login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.815986" elapsed="0.177807"/>
+</kw>
+<kw name="Verificar mensagem de erro de login" owner="cadastro_resources">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:37.183248" level="INFO">Element 'css=.alert.alert-danger' is displayed.</msg>
+<arg>${ALERTA_ERRO}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:18:36.997698" elapsed="0.187144"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_FALHA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.185434" elapsed="0.020528"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:37.214342" level="INFO">${url} = http://localhost/chamuze/PROJETO/login.php?erro=2</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.206365" elapsed="0.008252"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>login.php</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.214934" elapsed="0.000852"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:18:37.217142" level="INFO">Mensagem de erro de login exibida corretamente - usuário permanece na página de login</msg>
+<arg>Mensagem de erro de login exibida corretamente - usuário permanece na página de login</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.216463" elapsed="0.001363"/>
+</kw>
+<tag>error-handling</tag>
+<tag>negative-test</tag>
+<tag>validation</tag>
+<doc>Verifica se a mensagem de erro para credenciais inválidas é exibida corretamente</doc>
+<status status="PASS" start="2025-11-01T19:18:36.996219" elapsed="0.222184"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:18:37.365115" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_03_apos_mensagem_de_erro.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct14_03_apos_mensagem_de_erro.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct14_03_apos_mensagem_de_erro.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.220265" elapsed="0.145514"/>
+</kw>
+<kw name="Fechar o navegador" owner="cadastro_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T19:18:37.373375" elapsed="2.213227"/>
+</kw>
+<tag>browser</tag>
+<tag>teardown</tag>
+<doc>Fecha o navegador</doc>
+<status status="PASS" start="2025-11-01T19:18:37.369811" elapsed="2.217653"/>
+</kw>
+<doc>Tenta realizar login com senha incorreta e verifica que mensagem de erro é exibida</doc>
+<tag>authentication</tag>
+<tag>error-handling</tag>
+<tag>login</tag>
+<tag>negative-test</tag>
+<tag>solicitante</tag>
+<status status="PASS" start="2025-11-01T19:18:33.852455" elapsed="5.737965"/>
+</test>
+<doc>Testes automatizados para os formulários de cadastro do sistema ChamuZé</doc>
+<status status="PASS" start="2025-11-01T19:18:33.445591" elapsed="6.149005"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">authentication</stat>
+<stat pass="1" fail="0" skip="0">error-handling</stat>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">negative-test</stat>
+<stat pass="1" fail="0" skip="0">solicitante</stat>
+</tag>
+<suite>
+<stat name="Cadastro" id="s1" pass="1" fail="0" skip="0">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

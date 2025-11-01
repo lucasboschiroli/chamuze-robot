@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-01T19:23:05.399763" rpa="false" schemaversion="5">
+<suite id="s1" name="Proposta" source="c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\proposta\proposta.robot">
+<test id="s1-t1" name="CT50 - Envio de proposta com novo valor indicado" line="9">
+<kw name="Configurar ambiente de teste" owner="proposta_resources" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-11-01T19:23:05.824931" level="INFO" html="true">Directory '&lt;a href="file://c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\proposta\Evidencias"&gt;c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\proposta\Evidencias&lt;/a&gt;' already exists.</msg>
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\proposta/Evidencias</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-11-01T19:23:05.824538" elapsed="0.003097"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\proposta/Evidencias</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-11-01T19:23:05.828067" elapsed="0.000614"/>
+</kw>
+<status status="PASS" start="2025-11-01T19:23:05.823157" elapsed="0.005828"/>
+</kw>
+<kw name="Abrir navegador" owner="proposta_resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:05.831260" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/chamuze/PROJETO/cadastro.php?tipo_perfil=prestador'.</msg>
+<arg>${URL_CADASTRO}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T19:23:05.830689" elapsed="2.036197"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T19:23:07.867535" elapsed="0.073314"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:07.941719" level="INFO">Navegador aberto com sucesso</msg>
+<arg>Navegador aberto com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:07.941289" elapsed="0.000695"/>
+</kw>
+<tag>browser</tag>
+<tag>setup</tag>
+<doc>Abre o navegador Chrome e maximiza a janela na página de cadastro de prestadores</doc>
+<status status="PASS" start="2025-11-01T19:23:05.830010" elapsed="2.112222"/>
+</kw>
+<kw name="Acessar página de login" owner="proposta_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:07.945003" level="INFO">Opening url 'http://localhost/chamuze/PROJETO/login.php'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-01T19:23:07.944223" elapsed="0.068589"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.013178" elapsed="0.046737"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:08.060952" level="INFO">Acesso a página de login com sucesso</msg>
+<arg>Acesso a página de login com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.060407" elapsed="0.000823"/>
+</kw>
+<tag>login</tag>
+<tag>navigation</tag>
+<doc>Navega para a página de login e aguarda o carregamento do campo de email</doc>
+<status status="PASS" start="2025-11-01T19:23:07.943251" elapsed="0.118178"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:08.237137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_01_pagina_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_01_pagina_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_01_pagina_login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.062159" elapsed="0.177208"/>
+</kw>
+<kw name="Realizar login válido como prestador verificado" owner="proposta_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:08.242709" level="INFO">Typing text 'prestador@gmail.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL}</arg>
+<arg>prestador@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.241523" elapsed="0.250249"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:08.492457" level="INFO">Typing text '123' into text field 'name:senha'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.492092" elapsed="0.127574"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:08.622229" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:08.620381" elapsed="0.538749"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_LOGIN}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:09.159841" elapsed="0.591156"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:09.752215" level="INFO">Prestador verificado logado com sucesso</msg>
+<arg>Prestador verificado logado com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:09.751791" elapsed="0.000813"/>
+</kw>
+<tag>authentication</tag>
+<tag>login</tag>
+<tag>positive-test</tag>
+<tag>prestador</tag>
+<doc>Realiza login no sistema com credenciais de prestador verificado</doc>
+<status status="PASS" start="2025-11-01T19:23:08.240660" elapsed="1.513085"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:09.911027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_02_apos_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_02_apos_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_02_apos_login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:09.755508" elapsed="0.156039"/>
+</kw>
+<kw name="Selecionar primeiro serviço disponível" owner="proposta_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Serviços Disponíveis</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:09.913306" elapsed="0.014785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PRIMEIRO_SERVICO}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:09.928416" elapsed="0.072390"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:10.002414" level="INFO">Clicking element 'xpath=(//div[contains(@class, 'card')])[1]'.</msg>
+<arg>${PRIMEIRO_SERVICO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.001402" elapsed="0.375691"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Realizar Proposta</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.377777" elapsed="0.029959"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:10.409040" level="INFO">Serviço selecionado com sucesso</msg>
+<arg>Serviço selecionado com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.408351" elapsed="0.001161"/>
+</kw>
+<tag>navigation</tag>
+<tag>servico</tag>
+<doc>Clica no primeiro serviço da lista de serviços disponíveis</doc>
+<status status="PASS" start="2025-11-01T19:23:09.912382" elapsed="0.497578"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:10.584218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_03_servico_selecionado.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_03_servico_selecionado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_03_servico_selecionado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.411247" elapsed="0.173431"/>
+</kw>
+<kw name="Clicar em realizar proposta" owner="proposta_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOTAO_REALIZAR_PROPOSTA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.589303" elapsed="0.040547"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_REALIZAR_PROPOSTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.630613" elapsed="0.306094"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:10.938340" level="INFO">Clicking element 'id=btn-proposta'.</msg>
+<arg>${BOTAO_REALIZAR_PROPOSTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:10.937572" elapsed="0.153695"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.swal2-popup</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.091979" elapsed="0.284784"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Deseja realizar uma Proposta?</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.377316" elapsed="0.031166"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:11.409825" level="INFO">Modal SweetAlert de confirmação aberto</msg>
+<arg>Modal SweetAlert de confirmação aberto</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.409119" elapsed="0.001298"/>
+</kw>
+<tag>modal</tag>
+<tag>proposta</tag>
+<doc>Clica no botão "Realizar Proposta" (ID: btn-proposta) para abrir o modal SweetAlert</doc>
+<status status="PASS" start="2025-11-01T19:23:10.587854" elapsed="0.823039"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:11.567823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_04_modal_confirmacao.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_04_modal_confirmacao.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_04_modal_confirmacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.413315" elapsed="0.155868"/>
+</kw>
+<kw name="Confirmar envio de proposta" owner="proposta_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOTAO_SIM_ENVIAR_PROPOSTA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.572861" elapsed="0.033693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:11.607855" level="INFO">Clicking element 'css=button.swal2-confirm'.</msg>
+<arg>${BOTAO_SIM_ENVIAR_PROPOSTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:11.607123" elapsed="0.421063"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Realizar Proposta</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.028597" elapsed="0.065345"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Preço Original</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.094323" elapsed="0.018370"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:12.113466" level="INFO">Redirecionado para formulário de proposta (realizarProposta.php)</msg>
+<arg>Redirecionado para formulário de proposta (realizarProposta.php)</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.113008" elapsed="0.000746"/>
+</kw>
+<tag>modal</tag>
+<tag>proposta</tag>
+<doc>Confirma o envio da proposta clicando em "Sim, enviar proposta" no SweetAlert</doc>
+<status status="PASS" start="2025-11-01T19:23:11.571330" elapsed="0.542618"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:12.323387" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_05_formulario_proposta.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_05_formulario_proposta.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_05_formulario_proposta.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.115477" elapsed="0.208319"/>
+</kw>
+<kw name="Preencher proposta com novo valor" owner="proposta_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CAMPO_NOVO_PRECO}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.327349" elapsed="0.035291"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${CAMPO_NOVO_PRECO}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.362999" elapsed="0.069500"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:12.434250" level="INFO">Typing text '75.00' into text field 'name:valor_proposta'.</msg>
+<arg>${CAMPO_NOVO_PRECO}</arg>
+<arg>${novo_valor}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.433282" elapsed="0.234488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:12.670523" level="INFO">Typing text 'Posso realizar o serviço por um valor mais acessível mantendo a qualidade' into text field 'name:justificativa'.</msg>
+<arg>${CAMPO_JUSTIFICATIVA}</arg>
+<arg>${justificativa}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:12.669811" elapsed="0.344910"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:13.015622" level="INFO">Formulário de proposta preenchido: Novo valor=75.00</msg>
+<arg>Formulário de proposta preenchido: Novo valor=${novo_valor}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.015301" elapsed="0.000467"/>
+</kw>
+<arg>75.00</arg>
+<arg>Posso realizar o serviço por um valor mais acessível mantendo a qualidade</arg>
+<tag>data-input</tag>
+<tag>form</tag>
+<tag>proposta</tag>
+<doc>Preenche o formulário de proposta com novo valor e justificativa</doc>
+<status status="PASS" start="2025-11-01T19:23:12.326595" elapsed="0.689291"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:13.140537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_06_formulario_preenchido.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_06_formulario_preenchido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_06_formulario_preenchido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.016522" elapsed="0.124310"/>
+</kw>
+<kw name="Enviar proposta" owner="proposta_resources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOTAO_ENVIAR_PROPOSTA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.142616" elapsed="0.048255"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${BOTAO_ENVIAR_PROPOSTA}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.191178" elapsed="0.296672"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:13.488829" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Enviar Proposta')]'.</msg>
+<arg>${BOTAO_ENVIAR_PROPOSTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.488219" elapsed="0.334993"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:13.824699" level="INFO">Proposta enviada</msg>
+<arg>Proposta enviada</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.823860" elapsed="0.001391"/>
+</kw>
+<tag>proposta</tag>
+<tag>submission</tag>
+<doc>Clica no botão "Enviar Proposta" para submeter o formulário</doc>
+<status status="PASS" start="2025-11-01T19:23:13.141911" elapsed="0.683746"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:14.054413" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_07_apos_envio.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_07_apos_envio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_07_apos_envio.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:13.829150" elapsed="0.226285"/>
+</kw>
+<kw name="Verificar envio de proposta com sucesso" owner="proposta_resources">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-01T19:23:16.061557" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-01T19:23:14.059890" elapsed="2.002281"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:16.078270" level="INFO">${url} = http://localhost/chamuze/PROJETO/prestador/meusServicos.php?proposta=enviada</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.062636" elapsed="0.016030"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Not Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>realizarProposta</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.081412" elapsed="0.000902"/>
+</kw>
+<msg time="2025-11-01T19:23:16.082901" level="INFO">${proposta_enviada} = True</msg>
+<var>${proposta_enviada}</var>
+<arg>Should Not Contain</arg>
+<arg>${url}</arg>
+<arg>realizarProposta</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.079214" elapsed="0.003983"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:16.085923" level="INFO">Proposta enviada com sucesso - redirecionamento confirmado</msg>
+<arg>Proposta enviada com sucesso - redirecionamento confirmado</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.084864" elapsed="0.001636"/>
+</kw>
+<arg>${proposta_enviada}</arg>
+<arg>Log</arg>
+<arg>Proposta enviada com sucesso - redirecionamento confirmado</arg>
+<arg>ELSE</arg>
+<arg>Wait Until Page Contains</arg>
+<arg>sucesso</arg>
+<arg>timeout=10s</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.083652" elapsed="0.003339"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-01T19:23:16.088013" level="INFO">Verificação de envio de proposta concluída</msg>
+<arg>Verificação de envio de proposta concluída</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.087511" elapsed="0.000990"/>
+</kw>
+<tag>positive-test</tag>
+<tag>proposta</tag>
+<tag>validation</tag>
+<doc>Verifica se a proposta foi enviada com sucesso através de mensagem ou redirecionamento</doc>
+<status status="PASS" start="2025-11-01T19:23:14.058093" elapsed="2.030903"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T19:23:16.260637" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_08_proposta_enviada.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_08_proposta_enviada.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct50_08_proposta_enviada.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.091430" elapsed="0.169657"/>
+</kw>
+<kw name="Fechar o navegador" owner="proposta_resources">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T19:23:16.264191" elapsed="2.474218"/>
+</kw>
+<tag>browser</tag>
+<tag>teardown</tag>
+<doc>Fecha o navegador</doc>
+<status status="PASS" start="2025-11-01T19:23:16.262403" elapsed="2.476407"/>
+</kw>
+<kw name="Fechar o navegador" owner="proposta_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T19:23:18.741327" elapsed="0.000590"/>
+</kw>
+<tag>browser</tag>
+<tag>teardown</tag>
+<doc>Fecha o navegador</doc>
+<status status="PASS" start="2025-11-01T19:23:18.740273" elapsed="0.001911"/>
+</kw>
+<doc>Prestador envia proposta para um serviço disponível com alteração de preço</doc>
+<tag>form</tag>
+<tag>positive-test</tag>
+<tag>prestador</tag>
+<tag>proposta</tag>
+<tag>submission</tag>
+<status status="PASS" start="2025-11-01T19:23:05.820006" elapsed="12.922764"/>
+</test>
+<doc>Testes automatizados para os formulários de cadastro do sistema ChamuZé</doc>
+<status status="PASS" start="2025-11-01T19:23:05.410230" elapsed="13.334917"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">form</stat>
+<stat pass="1" fail="0" skip="0">positive-test</stat>
+<stat pass="1" fail="0" skip="0">prestador</stat>
+<stat pass="1" fail="0" skip="0">proposta</stat>
+<stat pass="1" fail="0" skip="0">submission</stat>
+</tag>
+<suite>
+<stat name="Proposta" id="s1" pass="1" fail="0" skip="0">Proposta</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
