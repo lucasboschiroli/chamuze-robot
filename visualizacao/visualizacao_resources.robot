@@ -11,13 +11,6 @@ ${CAMPO_EMAIL}    name:email
 ${CAMPO_SENHA}    name:senha
 ${BOTAO_LOGIN}    name:btn_login
 ${TEXTO_SUCESSO_LOGIN}    Serviços Disponíveis
-${TEXTO_SUCESSO_SOLICITANTE}    Seu serviço doméstico a um clique de distância.
-${TEXTO_FALHA}    E-mail ou senha incorretos!
-${URL_CADASTRO_ADM}    http://localhost/chamuze/PROJETO/administrador/cadastroAdm.php
-${MENSAGEM_SUCESSO_CADASTRO_ADM}    Usuário cadastrado com sucesso
-${MENSAGEM_EMAIL_DUPLICADO}    E-mail de usuário já cadastrado no banco de dados
-${ALERTA_SUCESSO}    css=.alert.alert-success
-${ALERTA_ERRO}    css=.alert.alert-danger
 
 *** Keywords ***
 Configurar ambiente de teste
