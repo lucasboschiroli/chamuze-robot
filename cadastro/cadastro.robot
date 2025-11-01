@@ -30,72 +30,72 @@ CT2 - Cadastro de prestadores com o campo de senha inválida (Senha fraca)
 
     Verificar a mensagem de erro de senha
 
-## CT3 - Cadastro de solicitantes com todos os campos válidos
+## CT4 - Cadastro de solicitantes com todos os campos válidos
 
-## CT4 - Cadastro de solicitantes com o campo CPF inválido
+## CT5 - Cadastro de solicitantes com o campo CPF inválido
 
-CT5 - Cadastro de administradores com todos os campos válidos
+CT8 - Cadastro de administradores com todos os campos válidos
     [Documentation]  Cadastrando um novo administrador no sistema
     [Tags]    form    submission    positive-test
 
     Abrir navegador
 
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct5_01_apos_acesso_a_pagina_de_login.png
+    Capture Page Screenshot    evidencia_ct8_01_apos_acesso_a_pagina_de_login.png
 
     Realizar login válido como administrador
-    Capture Page Screenshot    evidencia_ct5_02_apos_login.png
+    Capture Page Screenshot    evidencia_ct8_02_apos_login.png
 
     Acessar página de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct5_03_apos_acesso_a_pagina_de_cadastro.png
+    Capture Page Screenshot    evidencia_ct8_03_apos_acesso_a_pagina_de_cadastro.png
 
     Preencher formulário de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct5_04_apos_preenchimento_de_formulario.png
+    Capture Page Screenshot    evidencia_ct8_04_apos_preenchimento_de_formulario.png
 
     Enviar solicitação de cadastro
-    Capture Page Screenshot    evidencia_ct5_05_apos_envio_de_formulario.png
+    Capture Page Screenshot    evidencia_ct8_05_apos_envio_de_formulario.png
 
     Verificar se o cadastro de administradores foi realizado com sucesso  
-    Capture Page Screenshot    evidencia_ct5_06_apos_mensagem_de_sucesso.png
+    Capture Page Screenshot    evidencia_ct8_06_apos_mensagem_de_sucesso.png
 
-CT6 - Cadastro de administradores com o campo de email inválido (email já cadastrado)
+CT9 - Cadastro de administradores com o campo de email inválido (email já cadastrado)
     [Documentation]  Cadastrando um novo administrador no sistema utilizando um email já cadastrado
     [Tags]    form    submission    negative-test
 
     Abrir navegador
 
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct6_01_apos_acesso_a_pagina_de_login.png
+    Capture Page Screenshot    evidencia_ct9_01_apos_acesso_a_pagina_de_login.png
 
     Realizar login válido como administrador
-    Capture Page Screenshot    evidencia_ct6_02_apos_login.png
+    Capture Page Screenshot    evidencia_ct9_02_apos_login.png
 
     Acessar página de cadastro de administradores
-    Capture Page Screenshot    evidencia_ct6_03_apos_acesso_a_pagina_de_cadastro.png
+    Capture Page Screenshot    evidencia_ct9_03_apos_acesso_a_pagina_de_cadastro.png
 
     Realizar cadastro de administradores com email inválido (já cadastrado)
-    Capture Page Screenshot    evidencia_ct6_04_apos_preenchimento_de_formulario.png
+    Capture Page Screenshot    evidencia_ct9_04_apos_preenchimento_de_formulario.png
 
     Enviar solicitação de cadastro
-    Capture Page Screenshot    evidencia_ct6_05_apos_envio_de_formulario.png
+    Capture Page Screenshot    evidencia_ct9_05_apos_envio_de_formulario.png
 
     Verificar mensagem de erro de email duplicado
-    Capture Page Screenshot    evidencia_ct6_06_apos_mensagem_de_erro.png
+    Capture Page Screenshot    evidencia_ct9_06_apos_mensagem_de_erro.png
 
 ## Casos de teste extras?????
 
-CT3 - login válido como prestador 
+CT - login válido como prestador 
     [Documentation]
     [Tags]
     Acessar página de login
     Realizar login válido como prestador
 
-CT4 - login válido como solicitante 
+CT - login válido como solicitante 
     [Documentation]
     [Tags]
     Acessar página de login
     
-CT5 - login dando erro
+CT - login dando erro
     [Documentation]
     [tags]
     Acessar página de login

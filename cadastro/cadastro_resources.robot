@@ -186,7 +186,6 @@ Realizar login inválido como prestador
     Wait Until Page Contains   ${TEXTO_FALHA}    timeout=10s
 
 Fechar o navegador
-    [Documentation]    Captura screenshot da página atual e fecha o navegador
+    [Documentation]    Fecha o navegador
     [Tags]    teardown    browser
-    Capture PageScreenshot
     Close Browser
