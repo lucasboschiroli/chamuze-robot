@@ -64,8 +64,8 @@
 <status status="PASS" start="2025-11-01T19:23:07.943251" elapsed="0.118178"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:08.237137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_01_pagina_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_01_pagina_login.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_01_pagina_login.png</arg>
+<msg time="2025-11-01T19:23:08.237137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_01_pagina_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_01_pagina_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_01_pagina_login.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:08.062159" elapsed="0.177208"/>
 </kw>
@@ -110,8 +110,8 @@
 <status status="PASS" start="2025-11-01T19:23:08.240660" elapsed="1.513085"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:09.911027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_02_apos_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_02_apos_login.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_02_apos_login.png</arg>
+<msg time="2025-11-01T19:23:09.911027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_02_apos_login.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_02_apos_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_02_apos_login.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:09.755508" elapsed="0.156039"/>
 </kw>
@@ -152,8 +152,8 @@
 <status status="PASS" start="2025-11-01T19:23:09.912382" elapsed="0.497578"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:10.584218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_03_servico_selecionado.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_03_servico_selecionado.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_03_servico_selecionado.png</arg>
+<msg time="2025-11-01T19:23:10.584218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_03_servico_selecionado.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_03_servico_selecionado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_03_servico_selecionado.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:10.411247" elapsed="0.173431"/>
 </kw>
@@ -199,8 +199,8 @@
 <status status="PASS" start="2025-11-01T19:23:10.587854" elapsed="0.823039"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:11.567823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_04_modal_confirmacao.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_04_modal_confirmacao.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_04_modal_confirmacao.png</arg>
+<msg time="2025-11-01T19:23:11.567823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_04_modal_confirmacao.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_04_modal_confirmacao.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_04_modal_confirmacao.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:11.413315" elapsed="0.155868"/>
 </kw>
@@ -241,8 +241,8 @@
 <status status="PASS" start="2025-11-01T19:23:11.571330" elapsed="0.542618"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:12.323387" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_05_formulario_proposta.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_05_formulario_proposta.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_05_formulario_proposta.png</arg>
+<msg time="2025-11-01T19:23:12.323387" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_05_formulario_proposta.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_05_formulario_proposta.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_05_formulario_proposta.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:12.115477" elapsed="0.208319"/>
 </kw>
@@ -287,8 +287,8 @@
 <status status="PASS" start="2025-11-01T19:23:12.326595" elapsed="0.689291"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:13.140537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_06_formulario_preenchido.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_06_formulario_preenchido.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_06_formulario_preenchido.png</arg>
+<msg time="2025-11-01T19:23:13.140537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_06_formulario_preenchido.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_06_formulario_preenchido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_06_formulario_preenchido.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:13.016522" elapsed="0.124310"/>
 </kw>
@@ -322,8 +322,8 @@
 <status status="PASS" start="2025-11-01T19:23:13.141911" elapsed="0.683746"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:14.054413" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_07_apos_envio.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_07_apos_envio.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_07_apos_envio.png</arg>
+<msg time="2025-11-01T19:23:14.054413" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_07_apos_envio.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_07_apos_envio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_07_apos_envio.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:13.829150" elapsed="0.226285"/>
 </kw>
@@ -385,8 +385,8 @@
 <status status="PASS" start="2025-11-01T19:23:14.058093" elapsed="2.030903"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-01T19:23:16.260637" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_08_proposta_enviada.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/evidencia_ct50_08_proposta_enviada.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>evidencia_ct50_08_proposta_enviada.png</arg>
+<msg time="2025-11-01T19:23:16.260637" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_08_proposta_enviada.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/proposta/Evidencias/ct50_08_proposta_enviada.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct50_08_proposta_enviada.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <status status="PASS" start="2025-11-01T19:23:16.091430" elapsed="0.169657"/>
 </kw>

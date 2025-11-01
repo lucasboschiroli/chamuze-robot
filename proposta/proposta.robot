@@ -13,28 +13,28 @@ CT50 - Envio de proposta com novo valor indicado
     Abrir navegador
     
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct50_01_pagina_login.png
+    Capture Page Screenshot    ct50_01_pagina_login.png
     
     Realizar login válido como prestador verificado
-    Capture Page Screenshot    evidencia_ct50_02_apos_login.png
+    Capture Page Screenshot    ct50_02_apos_login.png
     
     Selecionar primeiro serviço disponível
-    Capture Page Screenshot    evidencia_ct50_03_servico_selecionado.png
+    Capture Page Screenshot    ct50_03_servico_selecionado.png
     
     Clicar em realizar proposta
-    Capture Page Screenshot    evidencia_ct50_04_modal_confirmacao.png
+    Capture Page Screenshot    ct50_04_modal_confirmacao.png
     
     Confirmar envio de proposta
-    Capture Page Screenshot    evidencia_ct50_05_formulario_proposta.png
+    Capture Page Screenshot    ct50_05_formulario_proposta.png
     
     Preencher proposta com novo valor    75.00    Posso realizar o serviço por um valor mais acessível mantendo a qualidade
-    Capture Page Screenshot    evidencia_ct50_06_formulario_preenchido.png
+    Capture Page Screenshot    ct50_06_formulario_preenchido.png
     
     Enviar proposta
-    Capture Page Screenshot    evidencia_ct50_07_apos_envio.png
+    Capture Page Screenshot    ct50_07_apos_envio.png
     
     Verificar envio de proposta com sucesso
-    Capture Page Screenshot    evidencia_ct50_08_proposta_enviada.png
+    Capture Page Screenshot    ct50_08_proposta_enviada.png
     
     Fechar o navegador
 
@@ -45,28 +45,28 @@ CT51 - Envio de proposta sem novo valor indicado
     Abrir navegador
     
     Acessar página de login
-    Capture Page Screenshot    evidencia_ct51_01_pagina_login.png
+    Capture Page Screenshot    ct51_01_pagina_login.png
     
     Realizar login válido como prestador verificado
-    Capture Page Screenshot    evidencia_ct51_02_apos_login.png
+    Capture Page Screenshot    ct51_02_apos_login.png
     
     Selecionar primeiro serviço disponível
-    Capture Page Screenshot    evidencia_ct51_03_servico_selecionado.png
+    Capture Page Screenshot    ct51_03_servico_selecionado.png
     
     Clicar em realizar proposta
-    Capture Page Screenshot    evidencia_ct51_04_modal_confirmacao.png
+    Capture Page Screenshot    ct51_04_modal_confirmacao.png
     
     Confirmar envio de proposta
-    Capture Page Screenshot    evidencia_ct51_05_formulario_proposta.png
+    Capture Page Screenshot    ct51_05_formulario_proposta.png
     
     Preencher proposta sem novo valor    Aceito realizar o serviço pelo valor solicitado
-    Capture Page Screenshot    evidencia_ct51_06_formulario_preenchido.png
+    Capture Page Screenshot    ct51_06_formulario_preenchido.png
     
     Enviar proposta
-    Capture Page Screenshot    evidencia_ct51_07_apos_envio.png
+    Capture Page Screenshot    ct51_07_apos_envio.png
     
     Verificar erro no envio de proposta
-    Capture Page Screenshot    evidencia_ct51_08_apos_mensagem_de_erro.png
+    Capture Page Screenshot    ct51_08_apos_mensagem_de_erro.png
     
     Fechar o navegador
     
