@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-01T16:48:04.175064" rpa="false" schemaversion="5">
+<suite id="s1" name="Chamuze Edicao De Servicos" source="c:\Users\marci\OneDrive\Área de Trabalho\TestesRobot\Edicao_de_servicos\chamuze_edicao_de_servicos.robot">
+<test id="s1-t1" name="CT29 - Edição de um serviço sem alterar dados" line="9">
+<kw name="Abrir navegador" owner="resources_gerais" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:04.569094" level="INFO">Opening browser 'chrome' to base url 'http://localhost/ChamuZe/PROJETO/login.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T16:48:04.569094" elapsed="2.302055"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T16:48:06.872158" elapsed="0.229970"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:04.567078" elapsed="2.535050"/>
+</kw>
+<kw name="Realizar login com credenciais" owner="resources_gerais">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:07.112649" level="INFO">Typing text 'juliana123@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:07.110163" elapsed="0.651343"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:07.762511" level="INFO">Typing password into text field 'id:senha'.</msg>
+<msg time="2025-11-01T16:48:07.845368" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:senha</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:07.762511" elapsed="0.231206"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:07.994701" level="INFO">Clicking button 'id:btn_login'.</msg>
+<arg>id:btn_login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:07.993717" elapsed="0.116143"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:menu</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:08.110859" elapsed="0.513274"/>
+</kw>
+<arg>juliana123@gmail.com</arg>
+<arg>Juliana123@</arg>
+<status status="PASS" start="2025-11-01T16:48:07.108141" elapsed="1.515992"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:08.760832" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_01_login_realizado.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_01_login_realizado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_01_login_realizado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:08.625134" elapsed="0.136697"/>
+</kw>
+<kw name="Clicar em Meus serviços no menu de navegação" owner="resources_gerais">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:08.763849" level="INFO">Clicking element 'id:meus_servicos'.</msg>
+<arg>id:meus_servicos</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:08.762832" elapsed="0.394245"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Serviços Disponíveis</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.158110" elapsed="0.026011"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:08.762832" elapsed="0.422304"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:09.407090" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_02_meus_servicos.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_02_meus_servicos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_02_meus_servicos.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.186120" elapsed="0.220970"/>
+</kw>
+<kw name="Clicar em Editar no serviço desejado" owner="recurso_chamuze_edicao_de_servicos">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>name:btn-editar</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.408088" elapsed="0.020010"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:09.428098" level="INFO">Clicking button 'name:btn-editar'.</msg>
+<arg>name:btn-editar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.428098" elapsed="0.319231"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Editar Serviço</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.748324" elapsed="0.032733"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:09.408088" elapsed="0.372969"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.052884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_03_pagina_edicao.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_03_pagina_edicao.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_03_pagina_edicao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:09.782058" elapsed="0.270826"/>
+</kw>
+<kw name="Não alterar nenhuma informação em nenhum campo" owner="recurso_chamuze_edicao_de_servicos">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:titulo</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.053886" elapsed="0.012000"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.089893" level="INFO">Element 'id:titulo' is displayed.</msg>
+<arg>id:titulo</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.065886" elapsed="0.024007"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.115869" level="INFO">Element 'id:descricao' is displayed.</msg>
+<arg>id:descricao</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.089893" elapsed="0.026996"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.139877" level="INFO">Element 'id:categoria' is displayed.</msg>
+<arg>id:categoria</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.116889" elapsed="0.022988"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.160830" level="INFO">Element 'id:regiao' is displayed.</msg>
+<arg>id:regiao</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.140797" elapsed="0.021034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.190893" level="INFO">Element 'id:preco' is displayed.</msg>
+<arg>id:preco</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.161831" elapsed="0.029062"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:10.053886" elapsed="0.137007"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.328919" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_04_campos_sem_alteracao.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_04_campos_sem_alteracao.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_04_campos_sem_alteracao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.192892" elapsed="0.137027"/>
+</kw>
+<kw name="Clicar em Atualizar" owner="recurso_chamuze_edicao_de_servicos">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:btn_atualizar</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.331923" elapsed="0.291071"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:btn_atualizar</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.623983" elapsed="0.028803"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id:btn_atualizar</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.652786" elapsed="0.032019"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:10.684805" level="INFO">Clicking element 'id:btn_atualizar'.</msg>
+<arg>id:btn_atualizar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.684805" elapsed="0.090042"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-01T16:48:11.777415" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-01T16:48:10.776876" elapsed="1.000539"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:10.330921" elapsed="1.447046"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:11.921213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_05_botao_atualizar_clicado.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_05_botao_atualizar_clicado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_05_botao_atualizar_clicado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:11.777967" elapsed="0.144236"/>
+</kw>
+<kw name="Verificar se o preço não foi alterado" owner="recurso_chamuze_edicao_de_servicos">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Serviços Disponíveis</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:11.923206" elapsed="0.013017"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:11.952110" level="INFO">Current page contains element 'xpath://p[@class='fw-bold text-success mb-0']'.</msg>
+<arg>xpath://p[@class='fw-bold text-success mb-0']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:48:11.936223" elapsed="0.015887"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:12.094402" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/verificacao_preco_nao_alterado.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/verificacao_preco_nao_alterado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/verificacao_preco_nao_alterado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:11.953120" elapsed="0.143283"/>
+</kw>
+<doc>Verifica se o preço original ainda aparece na página</doc>
+<status status="PASS" start="2025-11-01T16:48:11.922203" elapsed="0.175194"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:48:12.261144" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_06_mensagem_sucesso_ok.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Edicao_de_servicos/prints/ct29_06_mensagem_sucesso_ok.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO3_PRINTS}/ct29_06_mensagem_sucesso_ok.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:48:12.099915" elapsed="0.162229"/>
+</kw>
+<kw name="Fechar navegador" owner="resources_gerais" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T16:48:12.263148" elapsed="2.250833"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:48:12.263148" elapsed="2.250833"/>
+</kw>
+<doc>Esse teste verifica a edição de um serviço sem alterar dados</doc>
+<tag>alta</tag>
+<tag>edicao</tag>
+<tag>sem_alteracao</tag>
+<status status="PASS" start="2025-11-01T16:48:04.565795" elapsed="9.949186"/>
+</test>
+<doc>Testes de Edição de serviços do sistema Chamauze</doc>
+<status status="PASS" start="2025-11-01T16:48:04.186568" elapsed="10.330413"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">alta</stat>
+<stat pass="1" fail="0" skip="0">edicao</stat>
+<stat pass="1" fail="0" skip="0">sem_alteracao</stat>
+</tag>
+<suite>
+<stat name="Chamuze Edicao De Servicos" id="s1" pass="1" fail="0" skip="0">Chamuze Edicao De Servicos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

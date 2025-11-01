@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-01T16:06:13.164584" rpa="false" schemaversion="5">
+<suite id="s1" name="Chamuze Envio De Mensagens Para O Prestador" source="c:\Users\marci\OneDrive\Área de Trabalho\TestesRobot\Envio_de_mensagens_para_o_prestador\chamuze_envio_de_mensagens_para_o_prestador.robot">
+<test id="s1-t1" name="CT27 - Envio de uma mensagem em branco para o prestador" line="31">
+<kw name="Abrir navegador" owner="resources_gerais" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:13.577981" level="INFO">Opening browser 'chrome' to base url 'http://localhost/ChamuZe/PROJETO/login.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T16:06:13.576986" elapsed="2.469795"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T16:06:16.047760" elapsed="0.255348"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:13.576029" elapsed="2.727079"/>
+</kw>
+<kw name="Realizar login com credenciais" owner="resources_gerais">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:16.307104" level="INFO">Typing text 'juliana123@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:16.306102" elapsed="1.357974"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:17.666075" level="INFO">Typing password into text field 'id:senha'.</msg>
+<msg time="2025-11-01T16:06:17.787230" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:senha</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:17.665075" elapsed="0.362801"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:18.028909" level="INFO">Clicking button 'id:btn_login'.</msg>
+<arg>id:btn_login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:18.027876" elapsed="0.701829"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:menu</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:06:18.730706" elapsed="0.047177"/>
+</kw>
+<arg>juliana123@gmail.com</arg>
+<arg>Juliana123@</arg>
+<status status="PASS" start="2025-11-01T16:06:16.305109" elapsed="2.472774"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:18.957562" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_01_login_realizado.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_01_login_realizado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_01_login_realizado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:18.778885" elapsed="0.180678"/>
+</kw>
+<kw name="Clicar em Meus serviços no menu de navegação" owner="resources_gerais">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:18.964125" level="INFO">Clicking element 'id:meus_servicos'.</msg>
+<arg>id:meus_servicos</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:18.963108" elapsed="0.537569"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Serviços Disponíveis</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:06:19.501679" elapsed="0.038020"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:18.961562" elapsed="0.578137"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:19.883778" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_02_meus_servicos.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_02_meus_servicos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_02_meus_servicos.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:19.540694" elapsed="0.343084"/>
+</kw>
+<kw name="Clicar em Prestador responsável no serviço que já tenha sido aceito pelo prestador" owner="recurso_chamuze_envio_de_mensagens_para_o_prestador">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[contains(@id,'botao-prestador-responsavel') and contains(@style,'block')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T16:06:19.885777" elapsed="0.048008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:19.934785" level="INFO">Clicking element 'xpath://button[contains(@id,'botao-prestador-responsavel') and contains(@style,'block')]'.</msg>
+<arg>xpath://button[contains(@id,'botao-prestador-responsavel') and contains(@style,'block')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:19.934785" elapsed="0.410796"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:19.884776" elapsed="0.460805"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:20.577890" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_03_pagina_prestador.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_03_pagina_prestador.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_03_pagina_prestador.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:20.346577" elapsed="0.232312"/>
+</kw>
+<kw name="Clicar em Conversar" owner="recurso_chamuze_envio_de_mensagens_para_o_prestador">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:btn_conversar</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:06:20.580894" elapsed="0.048630"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:20.631540" level="INFO">Clicking element 'id:btn_conversar'.</msg>
+<arg>id:btn_conversar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:20.630525" elapsed="1.034267"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:20.579888" elapsed="1.084904"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:21.911693" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_04_chat_aberto.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_04_chat_aberto.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_04_chat_aberto.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:21.665795" elapsed="0.246900"/>
+</kw>
+<kw name="Deixar o campo de mensagem vazio" owner="recurso_chamuze_envio_de_mensagens_para_o_prestador">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>name:mensagem</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:06:21.914695" elapsed="0.029052"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name:mensagem</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:21.944742" elapsed="0.053575"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:21.913694" elapsed="0.085628"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:22.177950" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_05_campo_vazio.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_05_campo_vazio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_05_campo_vazio.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:21.999322" elapsed="0.178628"/>
+</kw>
+<kw name="Clicar em Enviar e verificar se a mensagem de alerta aparece abaixo do campo de digitar mensagem" owner="recurso_chamuze_envio_de_mensagens_para_o_prestador">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:22.180956" level="INFO">Clicking button 'name:envio_mensagem'.</msg>
+<arg>name:envio_mensagem</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.179951" elapsed="0.285903"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='mensagem'][@required]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.466850" elapsed="0.030115"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:22.499970" level="INFO">Executing JavaScript:
+return document.querySelector("input[name='mensagem']").validationMessage;
+Without any arguments.</msg>
+<msg time="2025-11-01T16:06:22.518591" level="INFO">${validation_message} = Preencha este campo.</msg>
+<var>${validation_message}</var>
+<arg>return document.querySelector("input[name='mensagem']").validationMessage;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.497969" elapsed="0.021625"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-11-01T16:06:22.520594" level="INFO">Length is 20.</msg>
+<arg>${validation_message}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.519594" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:22.179951" elapsed="0.343159"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T16:06:22.965670" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Envio_de_mensagens_para_o_prestador/prints/ct27_06_mensagem_alerta.png"&gt;&lt;img src="Envio_de_mensagens_para_o_prestador/prints/ct27_06_mensagem_alerta.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO2_PRINTS}/ct27_06_mensagem_alerta.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.524123" elapsed="0.441547"/>
+</kw>
+<kw name="Fechar navegador" owner="resources_gerais" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T16:06:22.974720" elapsed="2.398144"/>
+</kw>
+<status status="PASS" start="2025-11-01T16:06:22.971193" elapsed="2.402682"/>
+</kw>
+<doc>Esse teste verifica o envio de uma mensagem em branco para o prestador</doc>
+<tag>enviar_mensagem_vazia</tag>
+<status status="PASS" start="2025-11-01T16:06:13.572971" elapsed="11.801905"/>
+</test>
+<doc>Testes de Envio de mensagens para o prestador do sistema Chamauze</doc>
+<status status="PASS" start="2025-11-01T16:06:13.174590" elapsed="12.202300"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">enviar_mensagem_vazia</stat>
+</tag>
+<suite>
+<stat name="Chamuze Envio De Mensagens Para O Prestador" id="s1" pass="1" fail="0" skip="0">Chamuze Envio De Mensagens Para O Prestador</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

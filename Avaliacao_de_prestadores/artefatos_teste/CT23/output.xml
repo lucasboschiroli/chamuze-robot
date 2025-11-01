@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-01T17:51:10.573874" rpa="false" schemaversion="5">
+<suite id="s1" name="Chamuze Avaliacao De Prestadores" source="c:\Users\marci\OneDrive\Área de Trabalho\TestesRobot\Avaliacao_de_prestadores\chamuze_avaliacao_de_prestadores.robot">
+<test id="s1-t1" name="CT23 - Avaliação de prestador sem selecionar estrela" line="9">
+<kw name="Abrir navegador" owner="resources_gerais" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:10.984845" level="INFO">Opening browser 'chrome' to base url 'http://localhost/ChamuZe/PROJETO/login.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-01T17:51:10.983807" elapsed="2.519635"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-01T17:51:13.504426" elapsed="0.242131"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:10.982807" elapsed="2.763750"/>
+</kw>
+<kw name="Realizar login com credenciais" owner="resources_gerais">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:13.751075" level="INFO">Typing text 'juliana123@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:13.749078" elapsed="0.969808"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:14.720825" level="INFO">Typing password into text field 'id:senha'.</msg>
+<msg time="2025-11-01T17:51:14.862961" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:senha</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:14.719827" elapsed="0.374790"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:15.095612" level="INFO">Clicking button 'id:btn_login'.</msg>
+<arg>id:btn_login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:15.095612" elapsed="0.623086"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:menu</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T17:51:15.720705" elapsed="0.047053"/>
+</kw>
+<arg>juliana123@gmail.com</arg>
+<arg>Juliana123@</arg>
+<status status="PASS" start="2025-11-01T17:51:13.748065" elapsed="2.020709"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:15.946501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_01_login_realizado.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_01_login_realizado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_01_login_realizado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:15.769775" elapsed="0.180253"/>
+</kw>
+<kw name="Clicar em Meus serviços no menu de navegação" owner="resources_gerais">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:15.956029" level="INFO">Clicking element 'id:meus_servicos'.</msg>
+<arg>id:meus_servicos</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:15.955030" elapsed="0.549963"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Serviços Disponíveis</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T17:51:16.505986" elapsed="0.138408"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:15.952028" elapsed="0.692366"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:16.880754" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_02_meus_servicos.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_02_meus_servicos.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_02_meus_servicos.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:16.645417" elapsed="0.236340"/>
+</kw>
+<kw name="Clicar em Avaliar prestador no serviço que já tenha sido concluído pelo prestador" owner="recurso_chamuze_avaliacao_de_prestadores">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id:btn_avaliar</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T17:51:16.884752" elapsed="0.068988"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:btn_avaliar</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-01T17:51:16.953740" elapsed="0.372991"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:btn_avaliar</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T17:51:17.327752" elapsed="0.048809"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:17.378070" level="INFO">Clicking element 'id:btn_avaliar'.</msg>
+<arg>id:btn_avaliar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:17.376561" elapsed="0.086105"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://h1[text()='Avaliação']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-01T17:51:17.463671" elapsed="0.312190"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:16.883757" elapsed="0.893104"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:18.032515" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_03_modal_avaliacao_aberto.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_03_modal_avaliacao_aberto.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_03_modal_avaliacao_aberto.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:17.776861" elapsed="0.255654"/>
+</kw>
+<kw name="Não selecionar nenhuma estrela" owner="recurso_chamuze_avaliacao_de_prestadores">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='estrela'][@value='0']/preceding-sibling::label[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T17:51:18.050099" elapsed="0.035548"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:18.045058" elapsed="0.040589"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:18.330887" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_04_nenhuma_estrela_selecionada.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_04_nenhuma_estrela_selecionada.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_04_nenhuma_estrela_selecionada.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:18.087649" elapsed="0.245237"/>
+</kw>
+<kw name="Clicar em Avaliar" owner="recurso_chamuze_avaliacao_de_prestadores">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:18.340966" level="INFO">Clicking button 'id:btn_enviar_avaliar'.</msg>
+<arg>id:btn_enviar_avaliar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:18.336886" elapsed="0.257900"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-01T17:51:20.599519" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-01T17:51:18.595787" elapsed="2.004773"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:18.334887" elapsed="2.266736"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:20.796845" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_05_botao_avaliar_clicado.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_05_botao_avaliar_clicado.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_05_botao_avaliar_clicado.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:20.604548" elapsed="0.193292"/>
+</kw>
+<kw name="Verificar se aparece uma mensagem de Prestador avaliado com sucesso e clicar em Ok" owner="recurso_chamuze_avaliacao_de_prestadores">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Prestador avaliado com sucesso</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-01T17:51:20.799841" elapsed="0.018079"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:20.819426" level="INFO">Clicking button 'xpath://button[contains(@class, 'swal2-confirm')]'.</msg>
+<arg>xpath://button[contains(@class, 'swal2-confirm')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-01T17:51:20.819426" elapsed="0.105389"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-01T17:51:21.925280" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-01T17:51:20.924815" elapsed="1.000465"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:20.798859" elapsed="1.126421"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-01T17:51:22.065100" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_06_mensagem_sucesso_ok.png"&gt;&lt;img src="file:///C:/Users/marci/OneDrive/%C3%81rea%20de%20Trabalho/TestesRobot/Avaliacao_de_prestadores/prints/ct23_06_mensagem_sucesso_ok.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${CENARIO1_PRINTS}/ct23_06_mensagem_sucesso_ok.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-01T17:51:21.927827" elapsed="0.138270"/>
+</kw>
+<kw name="Fechar navegador" owner="resources_gerais" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-01T17:51:22.067097" elapsed="2.402935"/>
+</kw>
+<status status="PASS" start="2025-11-01T17:51:22.067097" elapsed="2.403758"/>
+</kw>
+<doc>Esse teste verifica a avaliação de um prestador sem selecionar nenhuma estrela</doc>
+<tag>avaliacao_zero_estrelas</tag>
+<status status="PASS" start="2025-11-01T17:51:10.981823" elapsed="13.489032"/>
+</test>
+<doc>Testes de Avaliação de Prestadores do sistema Chamauze</doc>
+<status status="PASS" start="2025-11-01T17:51:10.583867" elapsed="13.888992"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">avaliacao_zero_estrelas</stat>
+</tag>
+<suite>
+<stat name="Chamuze Avaliacao De Prestadores" id="s1" pass="1" fail="0" skip="0">Chamuze Avaliacao De Prestadores</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
