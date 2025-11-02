@@ -1,19 +1,21 @@
 *** Settings ***
 Resource    exclusao_resources.robot
-Test Setup    Configurar ambiente de teste
+Test Setup    Abrir navegador
 Test Teardown    Fechar o navegador
 
-*** Test Cases ***
-CT19 - Exclusão de um serviço existente
-    [Documentation]
-    [Tags]
-    Abrir navegador
-    Realizar login valido solicitante
-    Realizar exclusao de servico
 
-CT20 - Exclusão de um serviço existente sem finalizar (clicando em cancelar)
+*** Test Cases ***
+CT1- teste exclusao
     [Documentation]
     [Tags]
-    Abrir navegador
     Realizar login valido solicitante
+    Capture PageScreenshot
+    Realizar exclusao de servico
+    Capture PageScreenshot
+CT2- teste exclusao cancelando
+    [Documentation]
+    [Tags]
+    Realizar login valido solicitante
+    Capture PageScreenshot
     Realizar exclusao de servico cancelando no final
+    Capture PageScreenshot
