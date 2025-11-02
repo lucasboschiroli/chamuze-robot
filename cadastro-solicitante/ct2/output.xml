@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-02T17:16:08.339330" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="c:\Users\marci\OneDrive\Área de Trabalho\Leonardo\teste.robot">
+<test id="s1-t1" name="CT2 - Cadastro Com Cpf Valido" line="93">
+<kw name="Iniciar Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:09.103134" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/ChamuZe/PROJETO/cadastro.php?tipo_perfil=solicitante'.</msg>
+<arg>${PAG_CAD_SOLICITANTE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T17:16:09.102135" elapsed="3.586361"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T17:16:12.689487" elapsed="0.131078"/>
+</kw>
+<status status="PASS" start="2025-11-02T17:16:09.101190" elapsed="3.720368"/>
+</kw>
+<kw name="Refazer Teste">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:12.828149" level="INFO">Opening url 'http://localhost/ChamuZe/PROJETO/cadastro.php?tipo_perfil=solicitante'</msg>
+<arg>${PAG_CAD_SOLICITANTE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-02T17:16:12.827135" elapsed="0.153210"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:13.391518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:12.981339" elapsed="0.411206"/>
+</kw>
+<status status="PASS" start="2025-11-02T17:16:12.823571" elapsed="0.568974"/>
+</kw>
+<kw name="Inserir Dados Cadastrais">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T17:16:13.397074" elapsed="0.040075"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:13.439259" level="INFO">Typing text 'robot@teste.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:13.438164" elapsed="0.315027"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:14.074322" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:13.754331" elapsed="0.320990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:14.079335" level="INFO">Typing text 'Rafael Augusto' into text field 'name:nome'.</msg>
+<arg>${CAMPO_NOME}</arg>
+<arg>${NOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:14.075321" elapsed="0.596263"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:14.878989" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:14.672725" elapsed="0.207264"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:14.882989" level="INFO">Typing text 'de Oliveira Souza' into text field 'name:snome'.</msg>
+<arg>${CAMPO_SOBRENOME}</arg>
+<arg>${SOBRENOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:14.881989" elapsed="0.352397"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:15.524301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:15.239510" elapsed="0.285793"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:15.526357" level="INFO">Typing text '13112006' into text field 'name:datanasc'.</msg>
+<arg>${CAMPO_DATA_NASC}</arg>
+<arg>${DATA_NASC}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:15.526357" elapsed="0.299683"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:16.100638" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:15.827359" elapsed="0.274628"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:16.102987" level="INFO">Typing text '42931184039' into text field 'name:cpf'.</msg>
+<arg>${CAMPO_CPF}</arg>
+<arg>${CPF_ENTRADA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:16.101987" elapsed="0.267340"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:16.631369" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:16.370311" elapsed="0.261058"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:16.633368" level="INFO">Typing text '47986678998' into text field 'name:telefone'.</msg>
+<arg>${CAMPO_TEL}</arg>
+<arg>${TELEFONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:16.632367" elapsed="0.257908"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:17.139501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:16.890275" elapsed="0.249226"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:17.140525" level="INFO">Selecting options from selection list 'name:genero' by value 2.</msg>
+<arg>${CAMPO_GENERO}</arg>
+<arg>${GENERO}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-11-02T17:16:17.139501" elapsed="0.210837"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:17.635876" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:17.350338" elapsed="0.286552"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:17.637889" level="INFO">Typing text 'a2rvhT66-P9' into text field 'name:senha'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:17.636890" elapsed="0.226862"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:18.163091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:17.864765" elapsed="0.301497"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:18.170309" level="INFO">Typing text 'a2rvhT66-P9' into text field 'name:senhaConfirmada'.</msg>
+<arg>${CAMPO_SENHAC}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:18.166262" elapsed="0.357312"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:18.838744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:18.524617" elapsed="0.315239"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:18.845967" level="INFO">Typing text '83883280' into text field 'name:cep'.</msg>
+<arg>${CAMPO_CEP}</arg>
+<arg>${CEP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:18.840859" elapsed="0.294407"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:19.423592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:19.136263" elapsed="0.287329"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:19.427122" level="INFO">Typing text '189' into text field 'name:numero_casa'.</msg>
+<arg>${CAMPO_NUMERO}</arg>
+<arg>${NUMERO_CASA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T17:16:19.424592" elapsed="0.532470"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:30.223638" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:19.967125" elapsed="10.257754"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:30.227406" level="INFO">Sending key(s) ('RETURN',) to name:btn_enviar element.</msg>
+<msg time="2025-11-02T17:16:31.505089" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-02T17:16:31.506102" level="INFO">Releasing special key RETURN.</msg>
+<arg>${ENVIAR}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-02T17:16:30.224879" elapsed="1.372414"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SELECTOR_FINAL}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T17:16:31.600339" elapsed="0.067999"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:31.944477" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:31.669337" elapsed="0.275140"/>
+</kw>
+<arg>${CPF_VALIDO}</arg>
+<arg>${SELECTOR_FINAL_CPF_VALIDO}</arg>
+<status status="PASS" start="2025-11-02T17:16:13.394535" elapsed="18.549942"/>
+</kw>
+<kw name="Verificar Resultado">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:31.993828" level="INFO">Current page contains text 'Cadastrado com sucesso!'.</msg>
+<arg>${RESULTADO_ESPERADO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T17:16:31.947644" elapsed="0.047194"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T17:16:32.217133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T17:16:31.994838" elapsed="0.223307"/>
+</kw>
+<arg>${RESULTADO_CPF_VALIDO}</arg>
+<status status="PASS" start="2025-11-02T17:16:31.945988" elapsed="0.273148"/>
+</kw>
+<kw name="Fechar Browser" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T17:16:32.222129" elapsed="2.446704"/>
+</kw>
+<status status="PASS" start="2025-11-02T17:16:32.220129" elapsed="2.450747"/>
+</kw>
+<status status="PASS" start="2025-11-02T17:16:09.100136" elapsed="25.573736"/>
+</test>
+<doc>Testes para o cadastro de solicitante envolvendo o CPF</doc>
+<status status="PASS" start="2025-11-02T17:16:08.366028" elapsed="26.316954"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Teste" id="s1" pass="1" fail="0" skip="0">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
