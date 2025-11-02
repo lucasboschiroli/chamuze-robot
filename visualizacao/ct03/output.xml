@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-02T20:09:48.808587" rpa="false" schemaversion="5">
+<suite id="s1" name="ServicosView" source="c:\Users\marci\OneDrive\Área de Trabalho\Rafael\ServicosView.robot">
+<kw name="Configurar Suite" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:49.248347" level="INFO">Criando estrutura de diretórios para evidências</msg>
+<arg>Criando estrutura de diretórios para evidências</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.247343" elapsed="0.004851"/>
+</kw>
+<kw name="Criar Diretorio Se Nao Existir">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-11-02T20:09:49.254202" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias"&gt;C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias&lt;/a&gt;' exists.</msg>
+<arg>${diretorio}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.253202" elapsed="0.001000"/>
+</kw>
+<msg time="2025-11-02T20:09:49.254202" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>Directory Should Exist</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.253202" elapsed="0.002006"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${existe}</arg>
+<arg>Create Directory</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.255208" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Diretório verificado/criado: ${diretorio}</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.255208" elapsed="0.001003"/>
+</kw>
+<arg>${DIR_EVIDENCIAS}</arg>
+<doc>Verifica se o diretório existe, caso contrário, cria</doc>
+<status status="PASS" start="2025-11-02T20:09:49.252194" elapsed="0.004017"/>
+</kw>
+<kw name="Criar Diretorio Se Nao Existir">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-11-02T20:09:49.257215" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\selecionar_servico"&gt;C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\selecionar_servico&lt;/a&gt;' exists.</msg>
+<arg>${diretorio}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.257215" elapsed="0.000000"/>
+</kw>
+<msg time="2025-11-02T20:09:49.258209" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>Directory Should Exist</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.257215" elapsed="0.000994"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${existe}</arg>
+<arg>Create Directory</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.258209" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Diretório verificado/criado: ${diretorio}</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.258209" elapsed="0.001005"/>
+</kw>
+<arg>${DIR_SELECIONAR_SERVICO}</arg>
+<doc>Verifica se o diretório existe, caso contrário, cria</doc>
+<status status="PASS" start="2025-11-02T20:09:49.256211" elapsed="0.003003"/>
+</kw>
+<kw name="Criar Diretorio Se Nao Existir">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-11-02T20:09:49.260238" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\aceitar_servico"&gt;C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\aceitar_servico&lt;/a&gt;' exists.</msg>
+<arg>${diretorio}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.260238" elapsed="0.000000"/>
+</kw>
+<msg time="2025-11-02T20:09:49.260238" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>Directory Should Exist</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.259214" elapsed="0.001024"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${existe}</arg>
+<arg>Create Directory</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.260238" elapsed="0.000973"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Diretório verificado/criado: ${diretorio}</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.261211" elapsed="0.000000"/>
+</kw>
+<arg>${DIR_ACEITAR_SERVICO}</arg>
+<doc>Verifica se o diretório existe, caso contrário, cria</doc>
+<status status="PASS" start="2025-11-02T20:09:49.259214" elapsed="0.001997"/>
+</kw>
+<kw name="Criar Diretorio Se Nao Existir">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-11-02T20:09:49.262231" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\visualizar_solicitante"&gt;C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\visualizar_solicitante&lt;/a&gt;' exists.</msg>
+<arg>${diretorio}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.262231" elapsed="0.000977"/>
+</kw>
+<msg time="2025-11-02T20:09:49.263208" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>Directory Should Exist</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.262231" elapsed="0.000977"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${existe}</arg>
+<arg>Create Directory</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.263208" elapsed="0.001008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Diretório verificado/criado: ${diretorio}</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.264216" elapsed="0.000999"/>
+</kw>
+<arg>${DIR_VISUALIZAR_SOLICITANTE}</arg>
+<doc>Verifica se o diretório existe, caso contrário, cria</doc>
+<status status="PASS" start="2025-11-02T20:09:49.261211" elapsed="0.004004"/>
+</kw>
+<kw name="Criar Diretorio Se Nao Existir">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-11-02T20:09:49.268208" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\enviar_proposta"&gt;C:\Users\marci\OneDrive\Área de Trabalho\Rafael\Evidencias\enviar_proposta&lt;/a&gt;' exists.</msg>
+<arg>${diretorio}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.267314" elapsed="0.000894"/>
+</kw>
+<msg time="2025-11-02T20:09:49.268208" level="INFO">${existe} = True</msg>
+<var>${existe}</var>
+<arg>Directory Should Exist</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.267314" elapsed="0.000894"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>not ${existe}</arg>
+<arg>Create Directory</arg>
+<arg>${diretorio}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.269213" elapsed="0.001017"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Diretório verificado/criado: ${diretorio}</arg>
+<arg>DEBUG</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.271216" elapsed="0.000000"/>
+</kw>
+<arg>${DIR_ENVIAR_PROPOSTA}</arg>
+<doc>Verifica se o diretório existe, caso contrário, cria</doc>
+<status status="PASS" start="2025-11-02T20:09:49.266217" elapsed="0.005991"/>
+</kw>
+<doc>Cria estrutura de diretórios para evidências</doc>
+<status status="PASS" start="2025-11-02T20:09:49.246361" elapsed="0.025847"/>
+</kw>
+<test id="s1-t1" name="CT03 - Aceitar Solicitação De Serviço" line="259">
+<kw name="Iniciar Browser" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:49.275209" level="INFO">Iniciando browser Chrome</msg>
+<arg>Iniciando browser ${BROWSER}</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.274215" elapsed="0.000994"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:49.276210" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/ChamuZe/PROJETO/login.php'.</msg>
+<arg>${URL_LOGIN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T20:09:49.275209" elapsed="2.030435"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.305644" elapsed="0.038619"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT_DEFAULT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.344263" elapsed="0.003008"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${SELENIUM_SPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.347271" elapsed="0.001001"/>
+</kw>
+<doc>Abre o browser e configura parâmetros</doc>
+<status status="PASS" start="2025-11-02T20:09:49.274215" elapsed="2.074057"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:51.352809" level="INFO">Iniciando CT03 - Aceitar Solicitação De Serviço</msg>
+<arg>Iniciando CT03 - Aceitar Solicitação De Serviço</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.350279" elapsed="0.002530"/>
+</kw>
+<kw name="Realizar Login Como Prestador">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:51.359329" level="INFO">Realizando login como prestador</msg>
+<arg>Realizando login como prestador</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.358335" elapsed="0.000994"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${diretorio_evidencia}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.359329" elapsed="0.007072"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_CAMPO_EMAIL}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.367399" elapsed="0.467860"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:51.835259" level="INFO">Typing text 'prestador@teste.com' into text field 'id:email'.</msg>
+<arg>${LOC_CAMPO_EMAIL}</arg>
+<arg>${EMAIL_PRESTADOR}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:09:51.835259" elapsed="0.791238"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:52.627002" level="INFO">Typing password into text field 'id:senha'.</msg>
+<msg time="2025-11-02T20:09:53.081488" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${LOC_CAMPO_SENHA}</arg>
+<arg>${SENHA_PRESTADOR}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:09:52.627002" elapsed="0.711268"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:53.672010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/01-dados-login.png"&gt;&lt;img src="Evidencias/aceitar_servico/01-dados-login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>01-dados-login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:09:53.338780" elapsed="0.333230"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:53.673009" level="INFO">Clicking button 'id:btn_login'.</msg>
+<arg>${LOC_BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:09:53.673009" elapsed="1.565380"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>inicialPrestador</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-11-02T20:09:55.238389" elapsed="0.211845"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_LOGO}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:09:55.450756" elapsed="0.428415"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:56.188805" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/02-login-sucesso.png"&gt;&lt;img src="Evidencias/aceitar_servico/02-login-sucesso.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>02-login-sucesso.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:09:55.879171" elapsed="0.309634"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:56.189857" level="INFO">Login realizado com sucesso</msg>
+<arg>Login realizado com sucesso</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:56.189857" elapsed="0.000000"/>
+</kw>
+<arg>${DIR_ACEITAR_SERVICO}</arg>
+<doc>Executa o fluxo completo de login do prestador</doc>
+<status status="PASS" start="2025-11-02T20:09:51.357342" elapsed="4.833462"/>
+</kw>
+<kw name="Selecionar Primeiro Servico">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:56.193801" level="INFO">Selecionando primeiro serviço</msg>
+<arg>Selecionando primeiro serviço</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:56.191801" elapsed="0.002000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:09:56.193801" elapsed="0.435642"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:56.939643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/05-card-servico.png"&gt;&lt;img src="Evidencias/aceitar_servico/05-card-servico.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>05-card-servico.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:09:56.629443" elapsed="0.310200"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T20:09:56.940646" elapsed="0.693458"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:57.634104" level="INFO">Clicking element 'css:.row-1'.</msg>
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:09:57.634104" elapsed="0.608614"/>
+</kw>
+<doc>Clica no primeiro card de serviço disponível</doc>
+<status status="PASS" start="2025-11-02T20:09:56.191801" elapsed="2.050917"/>
+</kw>
+<kw name="Aceitar Servico">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:09:58.243725" level="INFO">Aceitando serviço</msg>
+<arg>Aceitando serviço</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:09:58.243725" elapsed="0.000998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_BTN_ACEITAR}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:09:58.244723" elapsed="0.423778"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:59.030431" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/07-botao-aceitar.png"&gt;&lt;img src="Evidencias/aceitar_servico/07-botao-aceitar.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>07-botao-aceitar.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:09:58.670178" elapsed="0.360253"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOC_BTN_ACEITAR}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T20:09:59.030431" elapsed="0.683147"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:09:59.713578" level="INFO">Clicking element 'name:btn-editar'.</msg>
+<arg>${LOC_BTN_ACEITAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:09:59.713578" elapsed="0.548443"/>
+</kw>
+<doc>Aceita a solicitação de serviço</doc>
+<status status="PASS" start="2025-11-02T20:09:58.243725" elapsed="2.018296"/>
+</kw>
+<kw name="Validar Aceite Do Servico">
+<kw name="Navegar Para Meus Servicos">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:10:00.264534" level="INFO">Navegando para Meus Serviços</msg>
+<arg>Navegando para Meus Serviços</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:10:00.263027" elapsed="0.001507"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_MENU_MEUS_SERVICOS}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:10:00.264534" elapsed="0.431576"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:10:01.011827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/03-menu-visivel.png"&gt;&lt;img src="Evidencias/aceitar_servico/03-menu-visivel.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>03-menu-visivel.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:10:00.696110" elapsed="0.315717"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOC_MENU_MEUS_SERVICOS}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T20:10:01.011827" elapsed="0.684240"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:10:01.697079" level="INFO">Clicking element 'xpath://a[@href='../prestador/meusServicos.php' or @href='meusServicos.php' or contains(text(),'Meus Serviços')]'.</msg>
+<arg>${LOC_MENU_MEUS_SERVICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:10:01.697079" elapsed="0.607429"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:10:02.304508" level="INFO">Clicou em Meus Serviços</msg>
+<arg>Clicou em Meus Serviços</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:10:02.304508" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>meusServicos</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-11-02T20:10:02.305545" elapsed="0.206961"/>
+</kw>
+<doc>Acessa a página de Meus Serviços através do menu</doc>
+<status status="PASS" start="2025-11-02T20:10:00.263027" elapsed="2.249479"/>
+</kw>
+<kw name="Selecionar Primeiro Servico">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:10:02.513783" level="INFO">Selecionando primeiro serviço</msg>
+<arg>Selecionando primeiro serviço</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:10:02.513783" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<arg>timeout=${TIMEOUT_DEFAULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T20:10:02.514784" elapsed="0.446563"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:10:03.299505" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/05-card-servico.png"&gt;&lt;img src="Evidencias/aceitar_servico/05-card-servico.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>05-card-servico.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:10:02.961853" elapsed="0.338657"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T20:10:03.300510" elapsed="0.684767"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:10:03.985277" level="INFO">Clicking element 'css:.row-1'.</msg>
+<arg>${LOC_CARD_SOLICITACAO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T20:10:03.985277" elapsed="0.623949"/>
+</kw>
+<doc>Clica no primeiro card de serviço disponível</doc>
+<status status="PASS" start="2025-11-02T20:10:02.512506" elapsed="2.096720"/>
+</kw>
+<doc>Verifica se o serviço foi aceito com sucesso</doc>
+<status status="PASS" start="2025-11-02T20:10:00.263027" elapsed="4.346199"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:10:04.610661" level="INFO">CT03 concluído com sucesso</msg>
+<arg>CT03 concluído com sucesso</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:10:04.609226" elapsed="0.001435"/>
+</kw>
+<kw name="Fechar Browser" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T20:10:04.612665" level="INFO">Fechando browser e capturando evidência final</msg>
+<arg>Fechando browser e capturando evidência final</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T20:10:04.612665" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T20:10:05.066711" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Evidencias/aceitar_servico/final.png"&gt;&lt;img src="Evidencias/aceitar_servico/final.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>final.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T20:10:04.614172" elapsed="0.453566"/>
+</kw>
+<msg time="2025-11-02T20:10:05.068710" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Capture Page Screenshot</arg>
+<arg>final.png</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-11-02T20:10:04.612665" elapsed="0.456045"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T20:10:05.068710" elapsed="2.452315"/>
+</kw>
+<doc>Captura evidência final e fecha o browser</doc>
+<status status="PASS" start="2025-11-02T20:10:04.611661" elapsed="2.910177"/>
+</kw>
+<doc>Valida o fluxo de aceitação de uma solicitação de serviço</doc>
+<tag>aceitar</tag>
+<tag>critico</tag>
+<tag>servico</tag>
+<status status="PASS" start="2025-11-02T20:09:49.273235" elapsed="18.248603"/>
+</test>
+<doc>Testes automatizados para o sistema ChamuZé - Módulo Prestador de Serviços
+Cenários: Visualização/Aceitação de serviços, Visualização de solicitante e Envio de proposta</doc>
+<status status="PASS" start="2025-11-02T20:09:48.817228" elapsed="18.706575"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">aceitar</stat>
+<stat pass="1" fail="0" skip="0">critico</stat>
+<stat pass="1" fail="0" skip="0">servico</stat>
+</tag>
+<suite>
+<stat name="ServicosView" id="s1" pass="1" fail="0" skip="0">ServicosView</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
