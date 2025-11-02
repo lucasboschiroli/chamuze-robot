@@ -8,7 +8,7 @@ Aceitar Proposta
     Acessar Pagina De Propostas
     Aceitar Proposta Enviada    
 
-Aceitar Proposta
+Recusar Proposta
     Acessar Sistema Como Solicitante
     Acessar Pagina De Propostas
     Recusar Proposta Enviada   

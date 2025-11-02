@@ -11,29 +11,29 @@ CT1 - Cadastro de prestadores com todos os campos válidos
     [Tags]    cadstro    prestador
 
     Abrir navegador
-    Capture PageScreenshot    ct1_1.png
+    Capture PageScreenshot    ct01_1.png
 
     Preencher formulário de cadastro de prestadores
-    Capture PageScreenshot    ct1_2.png
+    Capture PageScreenshot    ct01_2.png
 
     Enviar solicitação de cadastro
-    Capture PageScreenshot    ct1_3.png
+    Capture PageScreenshot    ct01_3.png
 
     Verificar se o cadastro foi realizado com sucesso
-    Capture PageScreenshot    ct1_4.png
+    Capture PageScreenshot    ct01_4.png
 
 CT2 - Cadastro de prestadores com o campo de senha inválida (Senha fraca)
     [Documentation]    realizar o cadastro de prestador, porem colocar uma senha fraca
     [Tags]    senha    fraca
 
     Abrir navegador
-    Capture PageScreenshot    ct1_1.png
+    Capture PageScreenshot    ct02_1.png
     Realizar cadastro de prestadores com uma senha fraca
-    Capture PageScreenshot    ct1_2.png
+    Capture PageScreenshot    ct02_2.png
     Enviar solicitação de cadastro
-    Capture PageScreenshot    ct1_3.png
+    Capture PageScreenshot    ct02_3.png
     Verificar a mensagem de erro de senha
-    Capture PageScreenshot    ct1_4.png
+    Capture PageScreenshot    ct02_4.png
 
 ## CT4 - Cadastro de solicitantes com todos os campos válidos
 

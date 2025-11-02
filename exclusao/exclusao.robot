@@ -5,17 +5,22 @@ Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***
-CT1- teste exclusao
+CT21- Exclusão de um serviço existente
     [Documentation]
     [Tags]
+
     Realizar login valido solicitante
-    Capture PageScreenshot
+    Capture PageScreenshot    ct21_1.png
+
     Realizar exclusao de servico
-    Capture PageScreenshot
-CT2- teste exclusao cancelando
+    Capture PageScreenshot    ct21_2.png
+
+CT22- Exclusão de um serviço existente sem finalizar (clicando em cancelar)
     [Documentation]
     [Tags]
+    
     Realizar login valido solicitante
-    Capture PageScreenshot
+    Capture PageScreenshot    ct22_1.png
+
     Realizar exclusao de servico cancelando no final
-    Capture PageScreenshot
+    Capture PageScreenshot    ct22_2.png

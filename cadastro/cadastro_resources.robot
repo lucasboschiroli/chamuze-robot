@@ -82,7 +82,7 @@ Preencher formulário de cadastro de prestadores
     Input Text    ${CIDADE}    FVFAF
     Input Text    ${NUMERO}    123
     Select From List By Label    ${ESTADO}    Paraná
-    Choose File    ${IMG}    C:/Users/Arthur/Pictures/Screenshots/Captura de tela 2025-05-04 193825.png
+    Choose File    ${IMG}    C:/Users/yosal/Pictures/Icons/Limbo.jpg
     Input Text    ${PIX}    8242848272784
 
 Preencher formulário de cadastro de administradores
@@ -144,7 +144,7 @@ Realizar cadastro de prestadores com uma senha fraca
     Input Text    ${CIDADE}    FVFAF
     Input Text    ${NUMERO}    123
     Select From List By Label    ${ESTADO}    Paraná
-    Choose File    ${IMG}    C:/Users/Arthur/Pictures/Screenshots/Captura de tela 2025-05-04 193825.png
+    Choose File    ${IMG}    C:/Users/yosal/Pictures/Icons/Limbo.jpg
     Input Text    ${PIX}    82423848272784
 
 Realizar cadastro de administradores com email inválido (já cadastrado)

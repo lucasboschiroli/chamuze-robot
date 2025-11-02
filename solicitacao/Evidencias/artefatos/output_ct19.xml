@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-02T01:01:31.553294" rpa="false" schemaversion="5">
+<suite id="s1" name="Solicitacao" source="c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\solicitacao\solicitacao.robot">
+<test id="s1-t1" name="CT19- Solicitação de serviços com todos os campos válidos" line="8">
+<kw name="Abrir navegador" owner="solicitacao_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:32.074664" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/chamuze/PROJETO/login.php'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T01:01:32.074233" elapsed="1.890620"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T01:01:33.966952" elapsed="0.053462"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:32.073169" elapsed="1.947549"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:34.332338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_0.png"&gt;&lt;img src="ct19_0.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_0.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:34.021739" elapsed="0.312539"/>
+</kw>
+<kw name="Realizar login valido solicitante" owner="solicitacao_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:34.339178" level="INFO">Typing text 'solicitante@teste.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL}</arg>
+<arg>solicitante@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:34.337255" elapsed="0.268413"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:34.607020" level="INFO">Typing text '123' into text field 'name:senha'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:34.606244" elapsed="0.175686"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:34.782900" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:34.782367" elapsed="0.111481"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:34.335818" elapsed="0.558548"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:35.590747" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_1.png"&gt;&lt;img src="ct19_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:34.899589" elapsed="0.692651"/>
+</kw>
+<kw name="Acessar pagina de solicitacao" owner="solicitacao_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_SOLICITANTE}</arg>
+<arg>timeout=40s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T01:01:35.596889" elapsed="0.041438"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:35.639630" level="INFO">Clicking element 'link:Solicitar Serviço'.</msg>
+<arg>${BOTAO_SOLICITAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:35.638929" elapsed="0.253355"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:35.594248" elapsed="0.299820"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:36.189418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_2.png"&gt;&lt;img src="ct19_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:35.900886" elapsed="0.289146"/>
+</kw>
+<kw name="Preencher formulario de solictacao" owner="solicitacao_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:36.194506" level="INFO">Typing text 'jardinagem' into text field 'name:titulo'.</msg>
+<arg>${TITULO_SOLICITAO}</arg>
+<arg>jardinagem</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:36.193647" elapsed="0.290993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:36.486061" level="INFO">Typing text 'quero alguem para realizar a minha jardinagem do meu quintal' into text field 'name:descricao'.</msg>
+<arg>${DESCRICAO_SERVICO}</arg>
+<arg>quero alguem para realizar a minha jardinagem do meu quintal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:36.485290" elapsed="0.517511"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.003901" level="INFO">Sending C:\Users\yosal\Pictures\Icons\Limbo.jpg to browser.</msg>
+<arg>${IMAGEM}</arg>
+<arg>C:/Users/yosal/Pictures/Icons/Limbo.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.003298" elapsed="0.050522"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.055091" level="INFO">Selecting options from selection list 'name:categoria' by label Jardinagem.</msg>
+<arg>${CAMPO_CATEGORIA_SERVICO}</arg>
+<arg>${CATEGORIA}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.054172" elapsed="0.169182"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.224617" level="INFO">Selecting options from selection list 'name:regiao' by label Cajuru.</msg>
+<arg>${CAMPO_CATEGORIA_REGIAO}</arg>
+<arg>${REGIAO}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.223927" elapsed="0.185947"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.416492" level="INFO">Typing text '120' into text field 'preco'.</msg>
+<arg>${PRECO}</arg>
+<arg>120</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.410625" elapsed="0.381848"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:36.191733" elapsed="1.601255"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.943998" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_3.png"&gt;&lt;img src="ct19_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_3.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.797026" elapsed="0.147715"/>
+</kw>
+<kw name="Enviar solicitacao" owner="solicitacao_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:37.949232" level="INFO">Clicking element 'name:btn_solicitar'.</msg>
+<arg>${PEDIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T01:01:37.947980" elapsed="0.349172"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:37.946920" elapsed="0.351200"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:38.678657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_4.png"&gt;&lt;img src="ct19_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_4.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:38.304532" elapsed="0.375393"/>
+</kw>
+<kw name="Verificar se foi feita a solicitacao" owner="solicitacao_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${CONFIRMA_SOLICITACAO}</arg>
+<arg>timeout=40s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T01:01:38.684049" elapsed="0.023022"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:38.682641" elapsed="0.024934"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T01:01:38.871263" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct19_5.png"&gt;&lt;img src="ct19_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct19_5.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T01:01:38.709169" elapsed="0.162918"/>
+</kw>
+<kw name="Fechar o navegador" owner="solicitacao_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T01:01:38.875873" elapsed="2.504091"/>
+</kw>
+<status status="PASS" start="2025-11-02T01:01:38.874370" elapsed="2.507357"/>
+</kw>
+<doc>criação de uma solicitação de serviço  para o solicitante e preenchendo o formulario</doc>
+<tag>criação</tag>
+<tag>solicitacao</tag>
+<status status="PASS" start="2025-11-02T01:01:32.071708" elapsed="9.312761"/>
+</test>
+<status status="PASS" start="2025-11-02T01:01:31.573352" elapsed="9.814040"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">criação</stat>
+<stat pass="1" fail="0" skip="0">solicitacao</stat>
+</tag>
+<suite>
+<stat name="Solicitacao" id="s1" pass="1" fail="0" skip="0">Solicitacao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

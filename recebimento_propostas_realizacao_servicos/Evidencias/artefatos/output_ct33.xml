@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-02T00:43:11.112326" rpa="false" schemaversion="5">
+<suite id="s1" name="Aceitar Proposta" source="c:\Users\nardo\OneDrive\Área de Trabalho\VeriVal - Robot\aceitar_proposta.robot">
+<test id="s1-t1" name="Aceitar Proposta" line="14">
+<kw name="Acessar Sistema Como Solicitante">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:11.902317" level="INFO">Opening browser 'chrome' to base url 'http://localhost/chamuze/PROJETO/login.php'.</msg>
+<arg>${URL_LOGIN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T00:43:11.901331" elapsed="3.817894"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T00:43:15.719759" elapsed="0.173399"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:16.241202" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:15.894157" elapsed="0.348048"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:16.243205" level="INFO">Typing text 'solicitante@teste.com' into text field 'name:email'.</msg>
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:16.242205" elapsed="0.438100"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:16.919996" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:16.680305" elapsed="0.240694"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:16.923526" level="INFO">Typing text '123' into text field 'name:senha'.</msg>
+<arg>name:senha</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:16.922511" elapsed="0.164970"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:17.393973" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:17.089497" elapsed="0.304476"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:17.396502" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>name:btn_login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:17.395484" elapsed="5.888904"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_LOGIN}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:43:23.285899" elapsed="0.526453"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:24.592113" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:23.814367" elapsed="0.778757"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:11.899326" elapsed="12.694801"/>
+</kw>
+<kw name="Acessar Pagina De Propostas">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOTAO_PAGINA_PROPOSTA}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T00:43:24.682193" elapsed="0.266232"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:24.949934" level="INFO">Clicking element 'link:Propostas'.</msg>
+<arg>${BOTAO_PAGINA_PROPOSTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:24.948425" elapsed="0.979192"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_PROPOSTAS}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:43:25.929127" elapsed="0.082277"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:26.432238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:26.015448" elapsed="0.417807"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:24.677649" elapsed="1.755606"/>
+</kw>
+<kw name="Aceitar Proposta Enviada">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(., 'Aceitar')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T00:43:26.465115" elapsed="0.147172"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:26.941201" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:26.614306" elapsed="0.335474"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:26.952346" level="INFO">Clicking element 'xpath=//button[contains(., 'Aceitar')]'.</msg>
+<arg>xpath=//button[contains(., 'Aceitar')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:26.951343" elapsed="0.525109"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:28.181360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:27.476452" elapsed="0.704908"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-02T00:43:33.230644" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-02T00:43:28.182361" elapsed="5.069043"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.258987" elapsed="5.677421"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:26.449462" elapsed="12.487924"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:11.897306" elapsed="27.055806"/>
+</test>
+<status status="PASS" start="2025-11-02T00:43:11.143368" elapsed="27.836192"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Aceitar Proposta" id="s1" pass="1" fail="0" skip="0">Aceitar Proposta</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

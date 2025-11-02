@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-02T00:53:58.700943" rpa="false" schemaversion="5">
+<suite id="s1" name="Exclusao" source="c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\exclusao\exclusao.robot">
+<test id="s1-t1" name="CT21- Exclusão de um serviço existente" line="8">
+<kw name="Abrir navegador" owner="exclusao_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:53:59.207322" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/chamuze/PROJETO/login.php'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T00:53:59.206823" elapsed="2.282028"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T00:54:01.490519" elapsed="0.071732"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:53:59.205249" elapsed="2.358687"/>
+</kw>
+<kw name="Realizar login valido solicitante" owner="exclusao_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:01.575515" level="INFO">Typing text 'solicitante@teste.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL}</arg>
+<arg>solicitante@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:01.569432" elapsed="0.455017"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:02.025344" level="INFO">Typing text '123' into text field 'name:senha'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:02.024887" elapsed="0.155460"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:02.181536" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:02.180933" elapsed="0.138165"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_SOLICITANTE}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:54:02.319719" elapsed="0.959684"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:54:01.568314" elapsed="1.711586"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:03.431623" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct21_1.png"&gt;&lt;img src="ct21_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct21_1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:54:03.280957" elapsed="0.153118"/>
+</kw>
+<kw name="Realizar exclusao de servico" owner="exclusao_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:03.442417" level="INFO">Clicking element 'link:Meus Serviços'.</msg>
+<arg>${BOTAO_MEUS_SERVICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:03.441154" elapsed="0.503029"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:03.946542" level="INFO">Clicking element 'xpath=//button[contains(., 'Excluir')]'.</msg>
+<arg>${BOTAO_EXCLUIR_SERVICO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:03.945689" elapsed="0.198917"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:04.145331" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Sim, excluir!')]'.</msg>
+<arg>${BOTAO_CONFIRMA_EXCLUIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:54:04.144899" elapsed="0.133328"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Sucesso</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:54:04.278688" elapsed="0.226787"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:54:03.436849" elapsed="1.068862"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:54:04.736482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ct21_2.png"&gt;&lt;img src="ct21_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct21_2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:54:04.506364" elapsed="0.230929"/>
+</kw>
+<kw name="Fechar o navegador" owner="exclusao_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T00:54:04.741700" elapsed="2.315352"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:54:04.740923" elapsed="2.316738"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:53:59.203188" elapsed="7.855142"/>
+</test>
+<status status="PASS" start="2025-11-02T00:53:58.712127" elapsed="8.348881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Exclusao" id="s1" pass="1" fail="0" skip="0">Exclusao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

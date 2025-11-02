@@ -44,7 +44,7 @@ Acessar pagina de solicitacao
 Preencher formulario de solictacao
     Input Text    ${TITULO_SOLICITAO}    jardinagem
     Input Text    ${DESCRICAO_SERVICO}    quero alguem para realizar a minha jardinagem do meu quintal
-    Choose File    ${IMAGEM}    C:/Users/Arthur/Pictures/Screenshots/Captura de tela 2025-05-04 193825.png
+    Choose File    ${IMAGEM}    C:/Users/yosal/Pictures/Icons/Limbo.jpg
     Select From List By Label    ${CAMPO_CATEGORIA_SERVICO}    ${CATEGORIA}
     Select From List By Label    ${CAMPO_CATEGORIA_REGIAO}    ${REGIAO}
     Input Text    ${PRECO}    120
@@ -58,7 +58,7 @@ Verificar se foi feita a solicitacao
 Preencher formulario solictacao sem preco
     Input Text    ${TITULO_SOLICITAO}    jardinagem
     Input Text    ${DESCRICAO_SERVICO}    quero alguem para realizar a minha jardinagem do meu quintal
-    Choose File    ${IMAGEM}    C:/Users/Arthur/Pictures/Screenshots/Captura de tela 2025-05-04 193825.png
+    Choose File    ${IMAGEM}    C:/Users/yosal/Pictures/Icons/Limbo.jpg
     Select From List By Label    ${CAMPO_CATEGORIA_SERVICO}    ${CATEGORIA}
     Select From List By Label    ${CAMPO_CATEGORIA_REGIAO}    ${REGIAO}
     Input Text    ${PRECO}    ${EMPTY}

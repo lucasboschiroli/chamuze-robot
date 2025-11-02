@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-02T00:43:26.585540" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro" source="c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\cadastro.robot">
+<test id="s1-t1" name="CT2 - Cadastro de prestadores com o campo de senha inválida (Senha fraca)" line="25">
+<kw name="Configurar ambiente de teste" owner="cadastro_resources" type="SETUP">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-11-02T00:43:27.108297" level="INFO" html="true">Directory '&lt;a href="file://c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\Evidencias"&gt;c:\LUCAS BOSCHIROLI\PROJECTS-COLLEGE\2025-chamuze-robot\cadastro\Evidencias&lt;/a&gt;' already exists.</msg>
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\cadastro/Evidencias</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-11-02T00:43:27.107834" elapsed="0.002971"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>c:\\LUCAS BOSCHIROLI\\PROJECTS-COLLEGE\\2025-chamuze-robot\\cadastro/Evidencias</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-11-02T00:43:27.111399" elapsed="0.001088"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:27.106701" elapsed="0.006152"/>
+</kw>
+<kw name="Abrir navegador" owner="cadastro_resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:27.115292" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/chamuze/PROJETO/cadastro.php?tipo_perfil=prestador'.</msg>
+<arg>${URL_CADASTRO}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T00:43:27.114606" elapsed="2.412132"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T00:43:29.528336" elapsed="0.084934"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T00:43:29.614744" level="INFO">Navegador aberto com sucesso</msg>
+<arg>Navegador aberto com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T00:43:29.614263" elapsed="0.000816"/>
+</kw>
+<tag>browser</tag>
+<tag>setup</tag>
+<doc>Abre o navegador Chrome e maximiza a janela na página de cadastro de prestadores</doc>
+<status status="PASS" start="2025-11-02T00:43:27.113651" elapsed="2.501811"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:29.955991" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_1.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct02_1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:29.616405" elapsed="0.340920"/>
+</kw>
+<kw name="Realizar cadastro de prestadores com uma senha fraca" owner="cadastro_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:29.963678" level="INFO">Typing text 'arthur234@gmail.com' into text field 'name:email'.</msg>
+<arg>${CAMPO_EMAIL_CADASTRO}</arg>
+<arg>arthur234@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:29.961085" elapsed="0.247328"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:30.209425" level="INFO">Typing text 'tutu' into text field 'name:nome'.</msg>
+<arg>${CAMPO_NOME}</arg>
+<arg>tutu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:30.208863" elapsed="0.268399"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:30.478902" level="INFO">Typing text 'Kali42442l' into text field 'name:snome'.</msg>
+<arg>${CAMPO_SNOME}</arg>
+<arg>Kali42442l</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:30.477938" elapsed="0.199675"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:30.678861" level="INFO">Typing text '06/10/2006' into text field 'id=datanasc'.</msg>
+<arg>${CAMPO_DATA_NASC}</arg>
+<arg>06/10/2006</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:30.678096" elapsed="0.230468"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:30.910321" level="INFO">Typing text '13005929965' into text field 'name:cpf'.</msg>
+<arg>${CPF}</arg>
+<arg>13005929965</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:30.909139" elapsed="0.239764"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:31.150299" level="INFO">Typing text '11111112111111' into text field 'name:cnpj'.</msg>
+<arg>${CNPJ}</arg>
+<arg>11111112111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:31.149499" elapsed="0.179651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:31.330003" level="INFO">Typing text '41998842424' into text field 'name:telefone'.</msg>
+<arg>${TELEFONE}</arg>
+<arg>41998842424</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:31.329552" elapsed="0.153755"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:31.485043" level="INFO">Selecting options from selection list 'name:genero' by label Masculino.</msg>
+<arg>${GENERO}</arg>
+<arg>Masculino</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-02T00:43:31.483853" elapsed="0.229151"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:31.714515" level="INFO">Typing text 'Vi28112712' into text field 'name:senha'.</msg>
+<arg>${SENHA}</arg>
+<arg>Vi28112712</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:31.713640" elapsed="0.249790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:31.966464" level="INFO">Typing text 'Vi28112712' into text field 'name:senhaConfirmada'.</msg>
+<arg>${SENHA_CONFIRMA}</arg>
+<arg>Vi28112712</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:31.965187" elapsed="0.200028"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:32.167192" level="INFO">Typing text '50765122' into text field 'name:cep'.</msg>
+<arg>${CEP}</arg>
+<arg>50765122</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:32.165948" elapsed="0.222719"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:32.389949" level="INFO">Typing text 'avenida' into text field 'name:logradouro'.</msg>
+<arg>${LOGADOURO}</arg>
+<arg>avenida</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:32.389238" elapsed="0.268972"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:32.659099" level="INFO">Typing text 'reboucas' into text field 'name:bairro'.</msg>
+<arg>${BAIRRO}</arg>
+<arg>reboucas</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:32.658618" elapsed="0.151884"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:32.811646" level="INFO">Typing text 'FVFAF' into text field 'name:cidade'.</msg>
+<arg>${CIDADE}</arg>
+<arg>FVFAF</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:32.811000" elapsed="0.185175"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:32.997168" level="INFO">Typing text '123' into text field 'name:numero_casa'.</msg>
+<arg>${NUMERO}</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:32.996729" elapsed="0.176215"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:33.174748" level="INFO">Selecting options from selection list 'name:estado' by label Paraná.</msg>
+<arg>${ESTADO}</arg>
+<arg>Paraná</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.173698" elapsed="0.154800"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:33.329784" level="INFO">Sending C:\Users\yosal\Pictures\Icons\Limbo.jpg to browser.</msg>
+<arg>${IMG}</arg>
+<arg>C:/Users/yosal/Pictures/Icons/Limbo.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.329123" elapsed="0.065268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:33.395330" level="INFO">Typing text '82423848272784' into text field 'name:chavepix'.</msg>
+<arg>${PIX}</arg>
+<arg>82423848272784</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.394811" elapsed="0.218634"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:29.958927" elapsed="3.654824"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:33.800519" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_2.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct02_2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.614496" elapsed="0.186564"/>
+</kw>
+<kw name="Enviar solicitação de cadastro" owner="cadastro_resources">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=btnEnviar</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-02T00:43:33.809582" elapsed="0.330083"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:34.140992" level="INFO">Clicking button 'name:btn_enviar'.</msg>
+<arg>${CADASTRAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.140290" elapsed="0.237903"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T00:43:34.379044" level="INFO">Solicitação de cadastro enviada com sucesso</msg>
+<arg>Solicitação de cadastro enviada com sucesso</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.378673" elapsed="0.000564"/>
+</kw>
+<tag>form</tag>
+<tag>submission</tag>
+<doc>Scroll até o botão de envio e envia o formulário de cadastro</doc>
+<status status="PASS" start="2025-11-02T00:43:33.807682" elapsed="0.571894"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:34.563673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_3.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct02_3.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.380505" elapsed="0.183530"/>
+</kw>
+<kw name="Verificar a mensagem de erro de senha" owner="cadastro_resources">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:34.613499" level="INFO">Element 'xpath=//div[contains(@class,'alert-danger')]' contains text 'A senha não atende aos requisitos'.</msg>
+<arg>${SENHA_ERRADA}</arg>
+<arg>A senha não atende aos requisitos</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.566181" elapsed="0.048246"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:43:34.565117" elapsed="0.050001"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:43:34.746447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_4.png"&gt;&lt;img src="file:///c:/LUCAS%20BOSCHIROLI/PROJECTS-COLLEGE/2025-chamuze-robot/cadastro/Evidencias/ct02_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>ct02_4.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.618213" elapsed="0.130366"/>
+</kw>
+<kw name="Fechar o navegador" owner="cadastro_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T00:43:34.758970" elapsed="2.512850"/>
+</kw>
+<tag>browser</tag>
+<tag>teardown</tag>
+<doc>Fecha o navegador</doc>
+<status status="PASS" start="2025-11-02T00:43:34.757375" elapsed="2.515332"/>
+</kw>
+<doc>realizar o cadastro de prestador, porem colocar uma senha fraca</doc>
+<tag>fraca</tag>
+<tag>senha</tag>
+<status status="PASS" start="2025-11-02T00:43:27.105339" elapsed="10.168796"/>
+</test>
+<doc>Testes automatizados para os formulários de cadastro do sistema ChamuZé</doc>
+<status status="PASS" start="2025-11-02T00:43:26.596526" elapsed="10.680207"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">fraca</stat>
+<stat pass="1" fail="0" skip="0">senha</stat>
+</tag>
+<suite>
+<stat name="Cadastro" id="s1" pass="1" fail="0" skip="0">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

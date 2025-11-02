@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.2 on win32)" generated="2025-11-02T00:02:37.599512" rpa="false" schemaversion="5">
+<suite id="s1" name="filtrar servicos semRegiao" source="c:\Users\nardo\OneDrive\Área de Trabalho\VeriVal - Robot\filtrar_servicos_semRegiao.robot">
+<test id="s1-t1" name="Filtrar Servicos Por Regiao" line="15">
+<kw name="Acessar Sistema Como Prestador">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:38.214607" level="INFO">Opening browser 'chrome' to base url 'http://localhost/chamuze/PROJETO/login.php'.</msg>
+<arg>${URL_LOGIN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T00:02:38.213606" elapsed="3.448412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T00:02:41.662530" elapsed="0.351669"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:42.258673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:42.015210" elapsed="0.244460"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:42.260689" level="INFO">Typing text 'prestador@teste.com' into text field 'name:email'.</msg>
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:02:42.259670" elapsed="0.310728"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:42.837588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:42.571398" elapsed="0.267192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:42.841593" level="INFO">Typing text '123' into text field 'name:senha'.</msg>
+<arg>name:senha</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:02:42.839600" elapsed="0.340408"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:43.455765" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:43.181006" elapsed="0.275759"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:43.459766" level="INFO">Clicking element 'name:btn_login'.</msg>
+<arg>name:btn_login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:02:43.457763" elapsed="4.743741"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:48.561810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:48.203012" elapsed="0.359800"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${TEXTO_SUCESSO_LOGIN}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:02:48.563323" elapsed="0.093761"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:02:38.212594" elapsed="10.444490"/>
+</kw>
+<kw name="Filtrar Servicos Por Regiao">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-02T00:02:51.883641" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-02T00:02:48.879256" elapsed="3.005399"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:52.175078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:51.885669" elapsed="0.290422"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:52.178091" level="INFO">Selecting options from selection list 'name:local_servico' by label Todas as regiões.</msg>
+<arg>${BTN_REGIAO}</arg>
+<arg>${REGIAO}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-02T00:02:52.177097" elapsed="0.298509"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>local_servico</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T00:02:52.475606" elapsed="0.056920"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:52.739068" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:52.533908" elapsed="0.207201"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:52.743648" level="INFO">Clicking element 'xpath://button[@type="submit" and contains(., "Filtrar")]'.</msg>
+<arg>${BOTAO_FILTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T00:02:52.742624" elapsed="1.775248"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:55.115742" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:54.518866" elapsed="0.597877"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${nome_regiao}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T00:02:55.116743" elapsed="0.479508"/>
+</kw>
+<arg>${REGIAO}</arg>
+<status status="PASS" start="2025-11-02T00:02:48.878000" elapsed="6.718251"/>
+</kw>
+<kw name="Verificar Servicos Filtrados">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:56.328332" level="INFO">Current page contains text 'Todas as regiões'.</msg>
+<arg>${REGIAO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T00:02:55.969295" elapsed="0.360036"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T00:02:57.065960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T00:02:56.330336" elapsed="0.736627"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T00:02:57.068971" elapsed="9.065930"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:02:55.965264" elapsed="10.171392"/>
+</kw>
+<status status="PASS" start="2025-11-02T00:02:38.211080" elapsed="27.930257"/>
+</test>
+<status status="PASS" start="2025-11-02T00:02:37.613703" elapsed="28.531285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="filtrar servicos semRegiao" id="s1" pass="1" fail="0" skip="0">filtrar servicos semRegiao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
