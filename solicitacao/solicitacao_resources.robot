@@ -70,5 +70,4 @@ Verificar mensagem de erro
     Should Be Equal As Strings    ${msg}    Preencha este campo.
     
 Fechar o navegador
-    Capture PageScreenshot
     Close Browser
